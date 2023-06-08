@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "oretastic",
+	"version": "${version}",
+	"name": "OreTastic",
+	"description": "Adds more Ores and Tools to Minecraft.",
+	"authors": [
+		"_GorgiK"
+	],
+	"credits": [
+		"VsyncIsOn"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/oretastic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zeropercent.oretastic.OreTastic"
+		],
+		"client": [
+			"net.zeropercent.oretastic.OreTasticClient"
+		],
+		"fabric-datagen": [
+			"net.zeropercent.oretastic.OreTasticModDataGenerator"
+		]
+	},
+	"mixins": [
+		"oretastic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
