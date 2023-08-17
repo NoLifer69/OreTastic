@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 3.0,
+  "group": "titanium",
+  "ingredient": {
+    "item": "oretastic:raw_titanium"
+  },
+  "result": "oretastic:titanium"
+}

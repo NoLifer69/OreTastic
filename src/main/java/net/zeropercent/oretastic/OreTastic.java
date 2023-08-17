@@ -2,6 +2,17 @@ package net.zeropercent.oretastic;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.zeropercent.oretastic.block.ModBlocks;
+import net.zeropercent.oretastic.enchantment.ModEnchantments;
+import net.zeropercent.oretastic.entity.ModEntities;
+import net.zeropercent.oretastic.entity.custom.StoneVillagerEntity;
+import net.zeropercent.oretastic.item.ModItemGroup;
+import net.zeropercent.oretastic.item.ModItems;
+import net.zeropercent.oretastic.util.ModFlammableBlocks;
+import net.zeropercent.oretastic.util.ModRegistries;
+import net.zeropercent.oretastic.util.ModStrippableBlocks;
+import net.zeropercent.oretastic.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,10 +22,15 @@ public class OreTastic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		ModItems.registerModItems();
+		ModItemGroup.registerItemGroups();
+		ModRegistries.registerModStuff();
+		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
+		ModFlammableBlocks.registerFlammableBlocks();
+		ModStrippableBlocks.registerStrippables();
+		ModEnchantments.registerModEnchantments();
 
-		LOGGER.info("Hello Fabric world!");
+		FabricDefaultAttributeRegistry.register(ModEntities.STONE_VILLAGER, StoneVillagerEntity.setAttributes());
 	}
 }

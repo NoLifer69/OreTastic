@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "oretastic:titanium_ore",
+    "oretastic:deepslate_titanium_ore",
+    "oretastic:raw_titanium_block",
+    "oretastic:titanium_block"
+  ]
+}

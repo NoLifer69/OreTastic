@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "oretastic:palm_log",
+    "oretastic:palm_wood",
+    "oretastic:stripped_palm_log",
+    "oretastic:stripped_palm_wood",
+    "oretastic:palm_leaves",
+    "oretastic:palm_planks"
+  ]
+}

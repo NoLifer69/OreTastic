@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "oretastic:titanium_ore",
+    "oretastic:deepslate_titanium_ore",
+    "oretastic:titanium_block",
+    "oretastic:raw_titanium_block",
+    "oretastic:ruby_ore",
+    "oretastic:deepslate_ruby_ore",
+    "oretastic:ruby_block",
+    "oretastic:lignite_ore",
+    "oretastic:deepslate_lignite_ore",
+    "oretastic:lignite_block",
+    "oretastic:steel_ore",
+    "oretastic:deepslate_steel_ore",
+    "oretastic:steel_block",
+    "oretastic:raw_steel_block"
+  ]
+}

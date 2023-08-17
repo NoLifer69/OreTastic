@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "oretastic:palm_planks"
+    }
+  ],
+  "result": {
+    "item": "oretastic:palm_button"
+  }
+}

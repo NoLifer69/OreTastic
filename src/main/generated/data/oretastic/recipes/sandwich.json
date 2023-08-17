@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "$": {
+      "item": "oretastic:cheese"
+    },
+    "*": {
+      "item": "minecraft:cooked_beef"
+    }
+  },
+  "pattern": [
+    "$$$",
+    "***",
+    "###"
+  ],
+  "result": {
+    "item": "oretastic:sandwich"
+  },
+  "show_notification": true
+}

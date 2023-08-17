@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oretastic:steel_block",
+    "oretastic:titanium_block",
+    "oretastic:ruby_block"
+  ]
+}

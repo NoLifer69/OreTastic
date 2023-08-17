@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "oretastic:lignite_ore",
+    "oretastic:deepslate_lignite_ore",
+    "oretastic:lignite_block",
+    "oretastic:steel_ore",
+    "oretastic:deepslate_steel_ore",
+    "oretastic:steel_block",
+    "oretastic:raw_steel_block"
+  ]
+}

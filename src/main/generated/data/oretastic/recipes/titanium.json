@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "oretastic:titanium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "oretastic:titanium"
+  }
+}

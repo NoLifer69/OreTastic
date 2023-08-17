@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:iron_ores",
+    "#minecraft:copper_ores",
+    "oretastic:steel_ore",
+    "oretastic:deepslate_steel_ore"
+  ]
+}

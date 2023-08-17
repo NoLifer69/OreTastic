@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oretastic:block/palm_slab"
+    },
+    "type=double": {
+      "model": "oretastic:block/palm_planks"
+    },
+    "type=top": {
+      "model": "oretastic:block/palm_slab_top"
+    }
+  }
+}

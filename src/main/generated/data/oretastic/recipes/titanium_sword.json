@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "oretastic:titanium"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " $ "
+  ],
+  "result": {
+    "item": "oretastic:titanium_sword"
+  },
+  "show_notification": true
+}

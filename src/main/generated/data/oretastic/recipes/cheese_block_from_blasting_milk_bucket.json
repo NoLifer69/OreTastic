@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "cheese",
+  "ingredient": {
+    "item": "minecraft:milk_bucket"
+  },
+  "result": "oretastic:cheese_block"
+}
