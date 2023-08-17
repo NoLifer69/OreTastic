@@ -21,6 +21,7 @@ public class OreTasticModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLanguageProvider::new);
 		pack.addProvider(ModFluidTagProvider::new);
+		pack.addProvider(ModAdvancementProvider::new);
 	}
 
 	@Override

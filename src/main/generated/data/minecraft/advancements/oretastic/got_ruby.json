@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:oretastic/root",
+  "criteria": {
+    "got_ruby": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:ruby"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Mine A Ruby Ore"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:ruby"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Most op Ore"
+    }
+  },
+  "requirements": [
+    [
+      "got_ruby"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

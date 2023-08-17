@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "opened": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:air"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Successfully Install The Mod"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:ruby"
+    },
+    "show_toast": false,
+    "title": {
+      "text": "OreTastic"
+    }
+  },
+  "requirements": [
+    [
+      "opened"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

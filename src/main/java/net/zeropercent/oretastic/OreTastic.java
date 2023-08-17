@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.zeropercent.oretastic.block.ModBlocks;
+import net.zeropercent.oretastic.data.ModAdvancementProvider;
 import net.zeropercent.oretastic.enchantment.ModEnchantments;
 import net.zeropercent.oretastic.entity.ModEntities;
 import net.zeropercent.oretastic.entity.custom.StoneVillagerEntity;

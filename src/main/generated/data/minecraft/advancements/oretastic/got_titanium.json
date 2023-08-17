@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:oretastic/root",
+  "criteria": {
+    "got_titanium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:raw_titanium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Now make a complete set"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:titanium"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Titanium Ore"
+    }
+  },
+  "requirements": [
+    [
+      "got_titanium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
