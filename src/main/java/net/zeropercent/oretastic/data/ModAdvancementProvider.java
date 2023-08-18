@@ -84,5 +84,24 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .criterion("got_ruby", InventoryChangedCriterion.Conditions.items(ModItems.RUBY))
                 .parent(rootAdvancement)
                 .build(consumer, OreTastic.MOD_ID + "/got_ruby");
+
+        Advancement getFullRubyArmor = Advancement.Builder.create()
+                .display(
+                        ModItems.RUBY_CHESTPLATE, // The display icon
+                        Text.literal("Cover Me In Rubies"), // The title
+                        Text.literal("Acquire AFull Armor Set Of Ruby Armor"), // The description
+                        new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("fot_full_ruby_armor_1", InventoryChangedCriterion.Conditions.items(ModItems.RUBY_HELMET))
+                .criterion("fot_full_ruby_armor_2", InventoryChangedCriterion.Conditions.items(ModItems.RUBY_CHESTPLATE))
+                .criterion("fot_full_ruby_armor_3", InventoryChangedCriterion.Conditions.items(ModItems.RUBY_LEGGINGS))
+                .criterion("fot_full_ruby_armor_4", InventoryChangedCriterion.Conditions.items(ModItems.RUBY_BOOTS))
+                .parent(gotRubyAdvancement)
+                .build(consumer, OreTastic.MOD_ID + "/got_full_ruby_armor");
     }
 }

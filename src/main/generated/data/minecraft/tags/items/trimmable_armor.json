@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "oretastic:ruby_boots",
+    "oretastic:ruby_leggings",
+    "oretastic:ruby_chestplate",
+    "oretastic:ruby_helmet",
+    "oretastic:titanium_boots",
+    "oretastic:titanium_leggings",
+    "oretastic:titanium_chestplate",
+    "oretastic:titanium_helmet",
+    "oretastic:steel_boots",
+    "oretastic:steel_leggings",
+    "oretastic:steel_chestplate",
+    "oretastic:steel_helmet"
+  ]
+}

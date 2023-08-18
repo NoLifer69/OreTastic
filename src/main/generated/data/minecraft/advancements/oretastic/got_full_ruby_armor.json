@@ -1,0 +1,85 @@
+{
+  "parent": "minecraft:oretastic/got_ruby",
+  "criteria": {
+    "fot_full_ruby_armor_1": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:ruby_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "fot_full_ruby_armor_2": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:ruby_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "fot_full_ruby_armor_3": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:ruby_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "fot_full_ruby_armor_4": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:ruby_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Acquire AFull Armor Set Of Ruby Armor"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:ruby_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Cover Me In Rubies"
+    }
+  },
+  "requirements": [
+    [
+      "fot_full_ruby_armor_1"
+    ],
+    [
+      "fot_full_ruby_armor_2"
+    ],
+    [
+      "fot_full_ruby_armor_3"
+    ],
+    [
+      "fot_full_ruby_armor_4"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
