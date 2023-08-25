@@ -7,6 +7,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.Util;
+import net.zeropercent.oretastic.OreTastic;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;
@@ -48,6 +49,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final SoundEvent equipSound;
     private final float toughness;
     private final float knockbackResistance;
+
+
     private final Lazy<Ingredient> repairIngredientSupplier;
 
     private ModArmorMaterials(String name, int durabilityMultiplier, EnumMap protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
@@ -82,7 +85,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
     public String getName() {
-        return this.name;
+        return OreTastic.MOD_ID + ":" + this.name;
     }
 
     public float getToughness() {
@@ -91,9 +94,5 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     public float getKnockbackResistance() {
         return this.knockbackResistance;
-    }
-
-    public String asString() {
-        return this.name;
     }
 }

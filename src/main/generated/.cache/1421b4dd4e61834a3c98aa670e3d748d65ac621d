@@ -1,4 +1,4 @@
-// 1.20	2023-08-18T12:13:38.9084981	OreTastic/Model Definitions
+// 1.20	2023-08-25T16:03:25.845142	OreTastic/Model Definitions
 981d976e191196ea3fc9a87c9bf73fef61aebf9e assets\oretastic\models\block\deepslate_steel_ore.json
 bee96f5fa27e15b028c8499bdd991a29791489fd assets\oretastic\models\block\deepslate_titanium_ore.json
 ad5225df92cb74e9caf29cc5363ccd4a6ea61f1e assets\oretastic\models\item\titanium_boots.json
@@ -117,8 +117,8 @@ f44d94870253c4ea556c284945a314d6fa496e3d assets\oretastic\blockstates\raw_steel_
 ac0760195dbf14f823d38587dda774ff778ec53f assets\oretastic\blockstates\lignite_ore.json
 8f2a35463fca82205e6fdf0bd8d30877f564f2c8 assets\oretastic\blockstates\titanium_ore.json
 c12f6fe9ed343a7cfe211016b78a0126785f5f3e assets\oretastic\blockstates\ruby_block.json
-8ad32288cbb9cbab740d518e1c13275141b3985a assets\oretastic\blockstates\palm_pressure_plate.json
 e83f61bb9450124b5c34bd38635fd1b95e941494 assets\oretastic\blockstates\steel_block.json
+8ad32288cbb9cbab740d518e1c13275141b3985a assets\oretastic\blockstates\palm_pressure_plate.json
 f8e86e3e2b2f6fe8a2f3ba38a192566bed2a32e0 assets\oretastic\models\block\palm_fence_gate_open.json
 2e3cc08685bb197f8fc2191dd4f13d2d38230bf0 assets\oretastic\models\item\steel_ingot.json
 be8a611f8ab2dcdc188589f178437e78c02c9fc6 assets\oretastic\blockstates\palm_fence_gate.json
@@ -132,8 +132,8 @@ d048a1b71d1afd13f7ad93b220a416255906a455 assets\oretastic\models\item\lignite_or
 c68585cd5686942b597661ffe69f60c0d17af975 assets\oretastic\models\item\cheese.json
 79a80580f2594d5536071c30703ac7fc64755bad assets\oretastic\models\item\palm_stairs.json
 df764a81948e8ee82aa9592d212b7978bcedc659 assets\oretastic\models\item\steel_axe.json
-b17e682b9ed5c1c5ee470b581aba8e3b13820e29 assets\oretastic\models\block\raw_steel_block.json
 9c5c3575bb2cead1984199df42e0530db96ec00c assets\oretastic\models\block\palm_slab.json
+b17e682b9ed5c1c5ee470b581aba8e3b13820e29 assets\oretastic\models\block\raw_steel_block.json
 ee060ae9d40200c52403511502165e98cc911593 assets\oretastic\models\block\palm_leaves.json
 9c96a76be30df2e9f2d88dbbd782d7b9896beb70 assets\oretastic\models\item\steel_pickaxe.json
 1281b208c668546430a413f9632772be6801af7f assets\oretastic\models\item\ruby_chestplate.json

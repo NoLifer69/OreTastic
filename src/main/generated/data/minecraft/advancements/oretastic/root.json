@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "opened": {
+    "gotGrass": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:air"
+              "minecraft:grass_block"
             ]
           }
         ]
@@ -17,21 +17,21 @@
     "announce_to_chat": false,
     "background": "oretastic:textures/block/palm_log.png",
     "description": {
-      "text": "Successfully Install The Mod"
+      "text": "Finally!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "oretastic:ruby"
+      "item": "minecraft:grass_block"
     },
     "show_toast": false,
     "title": {
-      "text": "OreTastic"
+      "text": "Touch Grass"
     }
   },
   "requirements": [
     [
-      "opened"
+      "gotGrass"
     ]
   ],
   "sends_telemetry_event": true

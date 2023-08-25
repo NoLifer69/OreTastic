@@ -5,10 +5,13 @@
 	"name": "OreTastic",
 	"description": "Adds more Ores and Tools to Minecraft.",
 	"authors": [
-		"_GorgiK"
+  		"Gorgi"
+	],
+	"contributors": [
+		"LagPhantom"
 	],
 	"contact": {
-		"sources": "Fabric Example Mod"
+		"sources": "https://github.com/NoLifer69/OreTastic"
 	},
 	"license": "MIT",
 	"icon": "assets/oretastic/icon.png",

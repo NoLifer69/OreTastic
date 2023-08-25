@@ -24,9 +24,9 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
     public void generateAdvancement(Consumer<Advancement> consumer) {
         Advancement rootAdvancement = Advancement.Builder.create()
                 .display(
-                        ModItems.RUBY, // The display icon
-                        Text.literal("OreTastic"), // The title
-                        Text.literal("Successfully Install The Mod"), // The description
+                        Items.GRASS_BLOCK, // The display icon
+                        Text.literal("Touch Grass"), // The title
+                        Text.literal("Finally!"), // The description
                         new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
                         AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
                         false, // Show toast top right
@@ -34,7 +34,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                         false // Hidden in the advancement tab
                 )
                 // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
-                .criterion("opened", InventoryChangedCriterion.Conditions.items(Items.AIR))
+                .criterion("gotGrass", InventoryChangedCriterion.Conditions.items(Items.GRASS_BLOCK))
                 .build(consumer, OreTastic.MOD_ID + "/root");
 
         Advancement gotTitaniumAdvancement = Advancement.Builder.create()

@@ -1,6 +1,6 @@
-// 1.20	2023-08-18T12:13:38.9214951	OreTastic/Tags for minecraft:item
+// 1.20	2023-08-25T16:03:25.8581467	OreTastic/Tags for minecraft:item
 565352cf2b217c64011afa72cf31e5865bb525c6 data\minecraft\tags\items\trim_materials.json
 9602baa2796401c1e1628fd9215918cd797a1e35 data\minecraft\tags\items\saplings.json
-dd50451666f44a7505df7fa805c73c1b4a82b1b6 data\minecraft\tags\items\planks.json
 5c69c28be3d8d8171df413bbf6c5171321fb99ab data\minecraft\tags\items\leaves.json
+dd50451666f44a7505df7fa805c73c1b4a82b1b6 data\minecraft\tags\items\planks.json
 8d3d75ed546c4ef780f97d075737d77f6889edd7 data\minecraft\tags\items\trimmable_armor.json
