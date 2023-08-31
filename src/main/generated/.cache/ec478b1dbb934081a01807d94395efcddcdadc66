@@ -1,8 +1,8 @@
-// 1.20	2023-08-25T16:03:25.852173	OreTastic/Tags for minecraft:block
+// 1.20	2023-08-27T17:24:37.6314256	OreTastic/Tags for minecraft:block
 dd50451666f44a7505df7fa805c73c1b4a82b1b6 data\minecraft\tags\blocks\planks.json
 2f435f96445ef1eec57afbb556166b013eb8caf9 data\minecraft\tags\blocks\beacon_base_blocks.json
-5c69c28be3d8d8171df413bbf6c5171321fb99ab data\fabric\tags\blocks\mineable\shears.json
 d863c1c15f0621b0c3644260625049f7545130cf data\minecraft\tags\blocks\wooden_fences.json
+5c69c28be3d8d8171df413bbf6c5171321fb99ab data\fabric\tags\blocks\mineable\shears.json
 8d5f8e9f4f16ae382ed76581a7712b95db8fe975 data\minecraft\tags\blocks\mineable\pickaxe.json
 a220d3242927bfa69d1356de728071d25b6864fa data\minecraft\tags\blocks\wooden_doors.json
 5e10ba4e892927aef877909c2852c7658cce6d52 data\minecraft\tags\blocks\wooden_pressure_plates.json

@@ -1,6 +1,6 @@
-// 1.20	2023-08-25T16:03:25.8501391	OreTastic/Block Loot Tables
-20efaae3c7dab1153e1f43835a4adbe98c757ea8 data\oretastic\loot_tables\blocks\palm_sapling.json
+// 1.20	2023-08-27T17:24:37.6304257	OreTastic/Block Loot Tables
 5e7b4bfd05bc35cb9e997a8ddff9ceed62d838aa data\oretastic\loot_tables\blocks\palm_door.json
+20efaae3c7dab1153e1f43835a4adbe98c757ea8 data\oretastic\loot_tables\blocks\palm_sapling.json
 90ce0dae1fa4740abdad1a1c3c2143bb1f8c4714 data\oretastic\loot_tables\blocks\raw_titanium_block.json
 c65ea1d4b548f5b3cc5ecf6293b562144ffb55aa data\oretastic\loot_tables\blocks\stripped_palm_log.json
 c1e06875909318c4819b1f7ee78448fc4ffa4b12 data\oretastic\loot_tables\blocks\raw_steel_block.json

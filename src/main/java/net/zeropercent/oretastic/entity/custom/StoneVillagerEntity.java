@@ -1,14 +1,18 @@
 package net.zeropercent.oretastic.entity.custom;
 
+import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.LookAroundGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WanderAroundFarGoal;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.passive.VillagerEntity;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.village.VillagerProfession;
+import net.minecraft.village.VillagerType;
+import net.minecraft.world.LocalDifficulty;
+import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import net.zeropercent.oretastic.entity.ModEntities;
 import org.jetbrains.annotations.Nullable;
@@ -19,9 +23,10 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
-public class StoneVillagerEntity extends PassiveEntity implements GeoEntity {
+public class StoneVillagerEntity extends VillagerEntity implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-    public StoneVillagerEntity(EntityType<? extends PassiveEntity> entityType, World world) {
+    private boolean natural;
+    public StoneVillagerEntity(EntityType<? extends VillagerEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -31,15 +36,9 @@ public class StoneVillagerEntity extends PassiveEntity implements GeoEntity {
                 add(EntityAttributes.GENERIC_MAX_HEALTH, 35.0f);
     }
 
-    protected void initGoals() {
-        this.goalSelector.add(2, new SwimGoal(this));
-        this.goalSelector.add(2, new WanderAroundFarGoal(this, 0.75f, 1));
-        this.goalSelector.add(3, new LookAroundGoal(this));
-    }
-
     @Nullable
     @Override
-    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
+    public VillagerEntity createChild(ServerWorld world, PassiveEntity entity) {
         return ModEntities.STONE_VILLAGER.create(world);
     }
 

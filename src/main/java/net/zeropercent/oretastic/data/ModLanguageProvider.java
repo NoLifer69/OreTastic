@@ -94,6 +94,16 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModEnchantments.LIGHTING_STRIKER, "Lighting Striker");
 
+        translationBuilder.add("entity.oretastic.stone_villager.toolsmith", "Stone Toolsmith");
+        translationBuilder.add("entity.oretastic.stone_villager.armorer", "Stone Armorer");
+        translationBuilder.add("entity.oretastic.stone_villager.farmer", "Stone Farmer");
+        translationBuilder.add("entity.oretastic.stone_villager.butcher", "Stone Butcher");
+        translationBuilder.add("entity.oretastic.stone_villager.weaponsmith", "Stone Weaponsmith");
+        translationBuilder.add("entity.oretastic.stone_villager.librarian", "Stone Librarian");
+        translationBuilder.add("entity.oretastic.stone_villager.fisherman", "Stone Fisherman");
+        translationBuilder.add("entity.oretastic.stone_villager.cartographer", "Stone Cartographer");
+        translationBuilder.add("entity.oretastic.stone_villager.shepherd", "Stone Shepherd");
+
         translationBuilder.add("tooltip.oretastic.metal_detector.tooltip", "§eFinds Iron, Steel And Copper Ores In A 64 Block Depth.§r");
     }
 }
