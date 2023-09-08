@@ -11,7 +11,8 @@ public enum ModToolMaterials implements ToolMaterial {
 
     TITANIUM(ModMiningLevels.TITANIUM, 2000, 8.5f, 3.5f, 20, () -> Ingredient.ofItems(ModItems.TITANIUM)),
     RUBY(ModMiningLevels.RUBY, 3500, 10f, 5f, 25, () -> Ingredient.ofItems(ModItems.RUBY)),
-    STEEL(MiningLevels.IRON, 500, 6.5f, 2.3f, 15, () -> Ingredient.ofItems(ModItems.STEEL_INGOT));
+    STEEL(ModMiningLevels.STEEL, 500, 6.5f, 2.3f, 15, () -> Ingredient.ofItems(ModItems.STEEL_INGOT)),
+    MAGMA(ModMiningLevels.MAGMA, 700, 6.5f, 2.3f, 15, () -> Ingredient.ofItems(ModItems.MAGMA_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

@@ -2,6 +2,7 @@ package net.zeropercent.oretastic.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
+import net.minecraft.item.trim.ArmorTrimMaterial;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -13,6 +14,7 @@ import net.zeropercent.oretastic.item.custom.MetalDetectorItem;
 import net.zeropercent.oretastic.item.custom.ModAxeItem;
 import net.zeropercent.oretastic.item.custom.ModHoeItem;
 import net.zeropercent.oretastic.item.custom.ModPickaxeItem;
+import net.zeropercent.oretastic.item.trim.ModArmorTrimMaterials;
 
 public class ModItems {
     public static final Item TITANIUM = registerItem("titanium",
@@ -106,6 +108,12 @@ public class ModItems {
 
     public static final Item OIL_BUCKET = registerItem("oil_bucket",
             new BucketItem(ModFluids.OIL_STILL, new FabricItemSettings().maxCount(1)));
+
+    public static final Item MAGMA_SHARD = registerItem("magma_shard",
+            new Item(new FabricItemSettings()));
+
+    public static final Item MAGMA_INGOT = registerItem("magma_ingot",
+            new Item(new FabricItemSettings()));
 
     public static Item registerItem(String name, Item item){
         return  Registry.register(Registries.ITEM, new Identifier(OreTastic.MOD_ID, name), item);

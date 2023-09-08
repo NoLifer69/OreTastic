@@ -1,0 +1,9 @@
+{
+  "asset_name": "magma",
+  "description": {
+    "color": "#9A5CC6",
+    "translate": "trim_material.oretastic.magma"
+  },
+  "ingredient": "oretastic:magma",
+  "item_model_index": 1.0
+}

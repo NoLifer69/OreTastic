@@ -27,9 +27,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(new Identifier(OreTastic.MOD_ID, "palm_leaves"));
 
         getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.MAGMA_INGOT)
                 .add(ModItems.RUBY)
                 .add(ModItems.TITANIUM)
-                .add(ModItems.STEEL_INGOT);;
+                .add(ModItems.STEEL_INGOT);
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.RUBY_BOOTS)

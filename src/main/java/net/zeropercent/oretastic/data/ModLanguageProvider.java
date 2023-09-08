@@ -90,6 +90,11 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.PALM_WALL, "Palm Wall");
         translationBuilder.add(ModBlocks.PALM_TRAPDOOR, "Palm Trapdoor");
 
+        translationBuilder.add(ModItems.MAGMA_SHARD, "Magma Shard");
+        translationBuilder.add(ModItems.MAGMA_INGOT, "Magma Ingot");
+        translationBuilder.add(ModBlocks.NETHERRACK_MAGMA_ORE, "Netherrack Magma Ore");
+        translationBuilder.add(ModBlocks.SOUL_SAND_MAGMA_ORE, "Soul Sand Magma Ore");
+
         translationBuilder.add(ModItems.OIL_BUCKET, "Oil Bucket");
 
         translationBuilder.add(ModEnchantments.LIGHTING_STRIKER, "Lighting Striker");

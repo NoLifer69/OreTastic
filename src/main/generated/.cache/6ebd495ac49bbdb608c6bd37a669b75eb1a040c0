@@ -1,4 +1,4 @@
-// 1.20	2023-08-27T17:24:37.6374229	OreTastic/oretastic
+// 1.20	2023-09-07T15:12:08.2416728	OreTastic/oretastic
 c0ee6abe644854f848bf121da50d485ae2d32444 data\oretastic\worldgen\placed_feature\raw_titanium_block_placed.json
 c29044e90c139bb367c17f83758e5d507562b3da data\oretastic\worldgen\placed_feature\ruby_ore_placed.json
 f4ac61484af2461f1d3dc3db6ce5085cf3289d03 data\oretastic\worldgen\placed_feature\oil_placed.json
@@ -9,7 +9,9 @@ f4f63cd740a44160e0dbb00f14ec137d8e7c5cfb data\oretastic\worldgen\placed_feature\
 726989169e4e9fedff17157351dabf337b2a8550 data\oretastic\worldgen\configured_feature\steel_ore.json
 7f98cd67d1b4f995b0ee33e75582c0b9faf709eb data\oretastic\worldgen\configured_feature\ruby_ore.json
 e04d70a129fa6c70ddc1b49193fe502d0951e379 data\oretastic\worldgen\configured_feature\oil.json
+20358a7de36fbaacb53222d47d861f314d2c8424 data\oretastic\worldgen\placed_feature\magma_ore_placed.json
 14d45737b9210a340d887d48a6f8b32d4e080818 data\oretastic\worldgen\configured_feature\palm_tree.json
 bab7418b8dfcb5ec11a21adace9f77427ea136fc data\oretastic\worldgen\configured_feature\lignite_ore.json
 f0f8b82653ac3429f659bb717bc886cc6c521cb3 data\oretastic\worldgen\placed_feature\titanium_ore_placed.json
 1b2daa78f0627b00d048beedf5a17f3ea0abfd23 data\oretastic\worldgen\placed_feature\palm_tree_placed.json
+463ab834ea44ff96d73fc29b566356560d382648 data\oretastic\worldgen\configured_feature\magma_ore.json

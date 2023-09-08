@@ -23,6 +23,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> STEEL_ORE_PLACED_KEY = registerKey("steel_ore_placed");
     public static final RegistryKey<PlacedFeature> PALM_TREE_PLACED_KEY = registerKey("palm_tree_placed");
     public static final RegistryKey<PlacedFeature> OIL_PLACED_KEY = registerKey("oil_placed");
+    public static final RegistryKey<PlacedFeature> MAGMA_ORE_PLACED_KEY = registerKey("magma_ore_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -50,6 +51,11 @@ public class ModPlacedFeatures {
         register(context, OIL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.OIL_KEY),
                 ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, MAGMA_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MAGMA_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(5, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

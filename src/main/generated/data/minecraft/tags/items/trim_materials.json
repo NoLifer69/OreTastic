@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "oretastic:magma_ingot",
     "oretastic:ruby",
     "oretastic:titanium",
     "oretastic:steel_ingot"

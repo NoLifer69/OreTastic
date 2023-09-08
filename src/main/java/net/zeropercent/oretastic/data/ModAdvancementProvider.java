@@ -103,5 +103,21 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .criterion("fot_full_ruby_armor_4", InventoryChangedCriterion.Conditions.items(ModItems.RUBY_BOOTS))
                 .parent(gotRubyAdvancement)
                 .build(consumer, OreTastic.MOD_ID + "/got_full_ruby_armor");
+
+        Advancement getMagmaShard = Advancement.Builder.create()
+                .display(
+                        ModItems.MAGMA_SHARD, // The display icon
+                        Text.literal("It Must Hurt To Touch"), // The title
+                        Text.literal("Acquire A Magma Shard"), // The description
+                        new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
+                        AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_magma_shard", InventoryChangedCriterion.Conditions.items(ModItems.MAGMA_SHARD))
+                .parent(rootAdvancement)
+                .build(consumer, OreTastic.MOD_ID + "/got_magma_shard");
     }
 }

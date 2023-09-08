@@ -54,6 +54,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHERRACK_MAGMA_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOUL_SAND_MAGMA_ORE);
+
+
         blockStateModelGenerator.registerParentedItemModel(ModItems.STONE_VILLAGER_SPAWN_EGG,
                 ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
     }
@@ -111,5 +115,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.PALM_SAPLING.asItem(), Models.GENERATED);
 
         itemModelGenerator.register(ModItems.OIL_BUCKET, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.MAGMA_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGMA_INGOT, Models.GENERATED);
     }
 }

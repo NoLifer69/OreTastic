@@ -19,6 +19,7 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.*;
+import net.zeropercent.oretastic.util.ModTags;
 
 import java.util.List;
 
@@ -30,11 +31,14 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> STEEL_ORE_KEY = registerKey("steel_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALM_TREE_KEY = registerKey("palm_tree");
     public static final RegistryKey<ConfiguredFeature<?, ?>> OIL_KEY = registerKey("oil");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MAGMA_ORE_KEY = registerKey("magma_ore");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest netherrackReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
+        RuleTest soulSandReplaceables = new TagMatchRuleTest(ModTags.Blocks.SOUL_SAND_REPLACEABLES);
 
         List<OreFeatureConfig.Target> overworldTitaniumOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.TITANIUM_ORE.getDefaultState()),
@@ -54,6 +58,9 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldOils =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.OIL_FLUID_BLOCK.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.OIL_FLUID_BLOCK.getDefaultState()));
+        List<OreFeatureConfig.Target> netherMagmaOres =
+                List.of(OreFeatureConfig.createTarget(netherrackReplaceables, ModBlocks.NETHERRACK_MAGMA_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(soulSandReplaceables, ModBlocks.SOUL_SAND_MAGMA_ORE.getDefaultState()));
 
         register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 4));
         register(context, TITANIUM_BLOCK_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumBlock, 1));
@@ -61,6 +68,7 @@ public class ModConfiguredFeatures {
         register(context, LIGNITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldLigniteOres, 13));
         register(context, STEEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSteelOres, 8));
         register(context, OIL_KEY, Feature.ORE, new OreFeatureConfig(overworldOils, 8));
+        register(context, MAGMA_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherMagmaOres, 6));
 
         register(context, PALM_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALM_LOG),

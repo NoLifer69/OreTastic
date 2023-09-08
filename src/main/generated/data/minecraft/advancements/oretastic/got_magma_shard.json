@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:oretastic/root",
+  "criteria": {
+    "got_magma_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:magma_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Acquire A Magma Shard"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:magma_shard"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "It Must Hurt To Touch"
+    }
+  },
+  "requirements": [
+    [
+      "got_magma_shard"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,9 +1,9 @@
-// 1.20	2023-08-27T17:24:37.6314256	OreTastic/Tags for minecraft:block
+// 1.20	2023-09-07T15:12:08.2385129	OreTastic/Tags for minecraft:block
 dd50451666f44a7505df7fa805c73c1b4a82b1b6 data\minecraft\tags\blocks\planks.json
 2f435f96445ef1eec57afbb556166b013eb8caf9 data\minecraft\tags\blocks\beacon_base_blocks.json
-d863c1c15f0621b0c3644260625049f7545130cf data\minecraft\tags\blocks\wooden_fences.json
 5c69c28be3d8d8171df413bbf6c5171321fb99ab data\fabric\tags\blocks\mineable\shears.json
-8d5f8e9f4f16ae382ed76581a7712b95db8fe975 data\minecraft\tags\blocks\mineable\pickaxe.json
+d863c1c15f0621b0c3644260625049f7545130cf data\minecraft\tags\blocks\wooden_fences.json
+4c3c487833f7a8fbf2938016e75bd83da80f8f6e data\minecraft\tags\blocks\mineable\pickaxe.json
 a220d3242927bfa69d1356de728071d25b6864fa data\minecraft\tags\blocks\wooden_doors.json
 5e10ba4e892927aef877909c2852c7658cce6d52 data\minecraft\tags\blocks\wooden_pressure_plates.json
 3c046ec601f0b7cfe044486235f6ff96bbe123ff data\minecraft\tags\blocks\walls.json
@@ -13,10 +13,11 @@ a220d3242927bfa69d1356de728071d25b6864fa data\minecraft\tags\blocks\wooden_doors
 795fba1e1ae360f2d13230891f43c8c9de52bc1d data\minecraft\tags\blocks\wooden_buttons.json
 b203ef1c631002989274fa29c7f068a076057206 data\minecraft\tags\blocks\mineable\hoe.json
 26471bcb2bafda103251e51e3134c5d0cd94c1eb data\minecraft\tags\blocks\mineable\axe.json
+98cd58849cbd16789829c7438fc3d6eca79f8c71 data\oretastic\tags\blocks\soul_sand_replaceables.json
 bb0326192e4257896575379762252d32a535aff4 data\minecraft\tags\blocks\wooden_stairs.json
-7e85e7c61566845b7ec40c8226b39a43924499f7 data\minecraft\tags\blocks\needs_iron_tool.json
+fd7725e6730490fcc2c8baffb2ccf0f602bf160b data\minecraft\tags\blocks\needs_iron_tool.json
 5c69c28be3d8d8171df413bbf6c5171321fb99ab data\minecraft\tags\blocks\leaves.json
 586908e586d16fd0b74d69a2c14884375f2e2ccb data\minecraft\tags\blocks\wooden_trapdoors.json
 a097060cf0d619c773b4b53800300083eabf6e99 data\fabric\tags\blocks\need_tool_level_4.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json
+255114b02870851accd6b5055caabf271a6247fe data\minecraft\tags\blocks\mineable\shovel.json
 5811c8ddf8fc9670e14034a06512868ddea60aa7 data\minecraft\tags\blocks\wooden_slabs.json

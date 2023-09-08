@@ -42,7 +42,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STEEL_ORE)
                 .add(ModBlocks.DEEPSLATE_STEEL_ORE)
                 .add(ModBlocks.STEEL_BLOCK)
-                .add(ModBlocks.RAW_STEEL_BLOCK);
+                .add(ModBlocks.RAW_STEEL_BLOCK)
+                .add(ModBlocks.NETHERRACK_MAGMA_ORE);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.CHEESE_BLOCK);
@@ -55,7 +56,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PALM_LEAVES)
                 .add(ModBlocks.PALM_PLANKS);
 
-        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(ModBlocks.SOUL_SAND_MAGMA_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TITANIUM_ORE)
@@ -70,7 +72,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STEEL_ORE)
                 .add(ModBlocks.DEEPSLATE_STEEL_ORE)
                 .add(ModBlocks.STEEL_BLOCK)
-                .add(ModBlocks.RAW_STEEL_BLOCK);
+                .add(ModBlocks.RAW_STEEL_BLOCK)
+                .add(ModBlocks.NETHERRACK_MAGMA_ORE)
+                .add(ModBlocks.SOUL_SAND_MAGMA_ORE);
 
 
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
@@ -123,5 +127,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.PALM_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.SOUL_SAND_REPLACEABLES)
+                .add(Blocks.SOUL_SAND)
+                .add(Blocks.SOUL_SOIL);
     }
 }

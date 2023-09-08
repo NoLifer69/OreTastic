@@ -113,6 +113,13 @@ public class ModBlocks {
                     .mapColor(MapColor.BLACK).replaceable().noCollision()
                     .pistonBehavior(PistonBehavior.DESTROY).dropsNothing().liquid()));
 
+    public static final Block NETHERRACK_MAGMA_ORE = registerBlock("netherrack_magma_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.create().mapColor(MapColor.RED).strength(3.0f).requiresTool()
+                    .sounds(BlockSoundGroup.NETHERRACK), UniformIntProvider.create(4, 6)));
+    public static final Block SOUL_SAND_MAGMA_ORE = registerBlock("soul_sand_magma_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.create().mapColor(MapColor.RED).strength(0.5f)
+                    .sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(4, 6)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK,

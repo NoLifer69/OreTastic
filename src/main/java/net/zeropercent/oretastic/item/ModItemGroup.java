@@ -105,6 +105,10 @@ public class ModItemGroup {
                         entries.add(ModItems.SANDWICH);
 
                         entries.add(ModItems.OIL_BUCKET);
+
+                        entries.add(ModItems.MAGMA_SHARD);
+                        entries.add(ModBlocks.NETHERRACK_MAGMA_ORE);
+                        entries.add(ModBlocks.SOUL_SAND_MAGMA_ORE);
                     }).build());
 
     public static void registerItemGroups() {

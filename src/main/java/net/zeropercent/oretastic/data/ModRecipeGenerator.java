@@ -2,6 +2,7 @@ package net.zeropercent.oretastic.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -429,5 +430,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_PLANKS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_BUTTON)));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.MAGMA_SHARD, RecipeCategory.DECORATIONS, Blocks.MAGMA_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MAGMA_INGOT, 1)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModItems.MAGMA_SHARD)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.MAGMA_SHARD),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.MAGMA_SHARD))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MAGMA_INGOT)));
     }
 }
