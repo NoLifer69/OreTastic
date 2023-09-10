@@ -1,4 +1,4 @@
-// 1.20	2023-09-07T15:12:08.2395127	OreTastic/Recipes
+// 1.20	2023-09-10T14:55:15.4648184	OreTastic/Recipes
 a7d09c3994b396d5dfbd03cb61cc70a3fd0c780d data\oretastic\recipes\palm_fence.json
 c91c572b5458bb2b74f0f92dbb43e50eb04f448e data\oretastic\recipes\ruby_leggings.json
 396c1d0a6fc75c5b04919c91a0831013a3adb705 data\oretastic\advancements\recipes\misc\steel_ingot_from_blasting_raw_steel.json
@@ -96,8 +96,8 @@ a653a074590a5df68aa269500ff04531bdd4f960 data\oretastic\advancements\recipes\too
 8d04f2a40051891feda128972835bc7918ee8a12 data\oretastic\advancements\recipes\combat\titanium_sword.json
 f589e76defbcce1998f9e6dcccaa5c26ce818251 data\oretastic\recipes\titanium_sword.json
 eaca6a8c1158ede3f75f9c299811c595f87e4929 data\oretastic\advancements\recipes\misc\titanium_from_blasting_titanium_ore.json
-3e43b33c4bcecfee370849c1d7d7c29ac2956fb5 data\oretastic\recipes\ruby_block.json
 c4fabb03c30e4393ffc63f48127c36707b22530f data\oretastic\advancements\recipes\tools\titanium_axe.json
+3e43b33c4bcecfee370849c1d7d7c29ac2956fb5 data\oretastic\recipes\ruby_block.json
 8a7135a29491059685b3d93883469d2d8b9cc8be data\oretastic\recipes\titanium_pickaxe.json
 01b1d36d4b0e7b9d6b6ecc2b5f957ff11ca2c4a9 data\oretastic\recipes\titanium_axe.json
 bc3512a1feafd11c77f5d70e0adb9ca7b81db3b5 data\oretastic\advancements\recipes\misc\steel_boots.json

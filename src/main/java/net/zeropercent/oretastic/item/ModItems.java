@@ -2,19 +2,13 @@ package net.zeropercent.oretastic.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
-import net.minecraft.item.trim.ArmorTrimMaterial;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.zeropercent.oretastic.OreTastic;
-import net.zeropercent.oretastic.block.ModBlocks;
 import net.zeropercent.oretastic.entity.ModEntities;
 import net.zeropercent.oretastic.fluid.ModFluids;
 import net.zeropercent.oretastic.item.custom.MetalDetectorItem;
-import net.zeropercent.oretastic.item.custom.ModAxeItem;
-import net.zeropercent.oretastic.item.custom.ModHoeItem;
-import net.zeropercent.oretastic.item.custom.ModPickaxeItem;
-import net.zeropercent.oretastic.item.trim.ModArmorTrimMaterials;
 
 public class ModItems {
     public static final Item TITANIUM = registerItem("titanium",
@@ -39,13 +33,13 @@ public class ModItems {
     public static final Item TITANIUM_SWORD = registerItem("titanium_sword",
             new SwordItem(ModToolMaterials.TITANIUM, 3, -2.4f, new FabricItemSettings()));
     public static final Item TITANIUM_AXE = registerItem("titanium_axe",
-            new ModAxeItem(ModToolMaterials.TITANIUM, 5,-3.0f , new FabricItemSettings()));
+            new AxeItem(ModToolMaterials.TITANIUM, 5,-3.0f , new FabricItemSettings()));
     public static final Item TITANIUM_PICKAXE = registerItem("titanium_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.TITANIUM, 1,-2.8f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterials.TITANIUM, 1,-2.8f, new FabricItemSettings()));
     public static final Item TITANIUM_SHOVEL = registerItem("titanium_shovel",
             new ShovelItem(ModToolMaterials.TITANIUM, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item TITANIUM_HOE = registerItem("titanium_hoe",
-            new ModHoeItem(ModToolMaterials.TITANIUM, -3, 0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterials.TITANIUM, -3, 0f, new FabricItemSettings()));
 
     public static final Item RUBY = registerItem("ruby",
             new Item(new FabricItemSettings()));
@@ -53,13 +47,13 @@ public class ModItems {
     public static final Item RUBY_SWORD = registerItem("ruby_sword",
             new SwordItem(ModToolMaterials.RUBY, 3, -2.4f, new FabricItemSettings()));
     public static final Item RUBY_AXE = registerItem("ruby_axe",
-            new ModAxeItem(ModToolMaterials.RUBY, 5,-3.0f , new FabricItemSettings()));
+            new AxeItem(ModToolMaterials.RUBY, 5,-3.0f , new FabricItemSettings()));
     public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.RUBY, 1,-2.8f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterials.RUBY, 1,-2.8f, new FabricItemSettings()));
     public static final Item RUBY_SHOVEL = registerItem("ruby_shovel",
             new ShovelItem(ModToolMaterials.RUBY, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item RUBY_HOE = registerItem("ruby_hoe",
-            new ModHoeItem(ModToolMaterials.RUBY, -3, 0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterials.RUBY, -3, 0f, new FabricItemSettings()));
 
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
             new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
@@ -94,13 +88,13 @@ public class ModItems {
     public static final Item STEEL_SWORD = registerItem("steel_sword",
             new SwordItem(ModToolMaterials.STEEL, 3, -2.4f, new FabricItemSettings()));
     public static final Item STEEL_AXE = registerItem("steel_axe",
-            new ModAxeItem(ModToolMaterials.STEEL, 5,-3.0f , new FabricItemSettings()));
+            new AxeItem(ModToolMaterials.STEEL, 5,-3.0f , new FabricItemSettings()));
     public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.STEEL, 1,-2.8f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterials.STEEL, 1,-2.8f, new FabricItemSettings()));
     public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
             new ShovelItem(ModToolMaterials.STEEL, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item STEEL_HOE = registerItem("steel_hoe",
-            new ModHoeItem(ModToolMaterials.STEEL, -3, 0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterials.STEEL, -3, 0f, new FabricItemSettings()));
     public static final Item CHEESE = registerItem("cheese",
             new Item(new FabricItemSettings().food(ModFoodComponents.CHEESE)));
     public static final Item SANDWICH = registerItem("sandwich",

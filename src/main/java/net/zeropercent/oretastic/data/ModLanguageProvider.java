@@ -99,6 +99,11 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModEnchantments.LIGHTING_STRIKER, "Lighting Striker");
 
+        translationBuilder.add("trim_material.oretastic.magma", "Magma Material");
+        translationBuilder.add("trim_material.oretastic.ruby", "Ruby Material");
+        translationBuilder.add("trim_material.oretastic.titanium", "Titanium Material");
+        translationBuilder.add("trim_material.oretastic.steel", "Steel Material");
+
         translationBuilder.add("entity.oretastic.stone_villager.toolsmith", "Stone Toolsmith");
         translationBuilder.add("entity.oretastic.stone_villager.armorer", "Stone Armorer");
         translationBuilder.add("entity.oretastic.stone_villager.farmer", "Stone Farmer");

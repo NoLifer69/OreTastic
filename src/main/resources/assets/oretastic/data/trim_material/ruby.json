@@ -1,9 +1,0 @@
-{
-  "asset_name": "ruby",
-  "description": {
-    "color": "#9A5CC6",
-    "translate": "trim_material.oretastic.ruby"
-  },
-  "ingredient": "oretastic:ruby",
-  "item_model_index": 1.0
-}

@@ -83,5 +83,9 @@
   "item.oretastic.titanium_shovel": "Titanium Shovel",
   "item.oretastic.titanium_sword": "Titanium Sword",
   "itemgroup.oretastic": "OreTastic",
-  "tooltip.oretastic.metal_detector.tooltip": "§eFinds Iron, Steel And Copper Ores In A 64 Block Depth.§r"
+  "tooltip.oretastic.metal_detector.tooltip": "§eFinds Iron, Steel And Copper Ores In A 64 Block Depth.§r",
+  "trim_material.oretastic.magma": "Magma Material",
+  "trim_material.oretastic.ruby": "Ruby Material",
+  "trim_material.oretastic.steel": "Steel Material",
+  "trim_material.oretastic.titanium": "Titanium Material"
 }

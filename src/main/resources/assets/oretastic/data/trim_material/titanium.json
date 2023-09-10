@@ -1,9 +1,0 @@
-{
-  "asset_name": "titanium",
-  "description": {
-    "color": "#9A5CC6",
-    "translate": "trim_material.oretastic.titanium"
-  },
-  "ingredient": "oretastic:titanium",
-  "item_model_index": 1.0
-}

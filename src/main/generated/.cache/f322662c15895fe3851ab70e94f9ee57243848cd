@@ -1,9 +1,9 @@
-// 1.20	2023-09-07T15:12:08.2375118	OreTastic/Block Loot Tables
+// 1.20	2023-09-10T14:55:15.4608006	OreTastic/Block Loot Tables
 20efaae3c7dab1153e1f43835a4adbe98c757ea8 data\oretastic\loot_tables\blocks\palm_sapling.json
 c65ea1d4b548f5b3cc5ecf6293b562144ffb55aa data\oretastic\loot_tables\blocks\stripped_palm_log.json
 7df312a3dd12eafdd2b62900f706e840a3de1441 data\oretastic\loot_tables\blocks\palm_pressure_plate.json
-c12a8ffbddf1c27f68a9236f28768050b008735c data\oretastic\loot_tables\blocks\stripped_palm_wood.json
 ef01fbf0ff3230f2736fc1d889eca80118156a62 data\oretastic\loot_tables\blocks\soul_sand_magma_ore.json
+c12a8ffbddf1c27f68a9236f28768050b008735c data\oretastic\loot_tables\blocks\stripped_palm_wood.json
 0aa9ec0d9d0a1de28613e1fa902581d11a61d0d6 data\oretastic\loot_tables\blocks\palm_stairs.json
 963b74dcc67a8998d1b84cd0ddd75f798d901b65 data\oretastic\loot_tables\blocks\netherrack_magma_ore.json
 ea3eeed84bc1448928efcdca32689c7673698fdd data\oretastic\loot_tables\blocks\titanium_block.json
@@ -22,8 +22,8 @@ de4d543d4a61a017d076bce6f28d40a245e29aa7 data\oretastic\loot_tables\blocks\ligni
 15ce2d519bd3f4e7f1b3a2306b3320535f976d03 data\oretastic\loot_tables\blocks\deepslate_steel_ore.json
 e8bb4467908536afb47766f2aa1155b40039d2c0 data\oretastic\loot_tables\blocks\cheese_block.json
 1a88c3860c20f53979800dd62732eec4dfeb1100 data\oretastic\loot_tables\blocks\deepslate_ruby_ore.json
-4e6d369791a52d0ffe88c76374e49b8e4496ac08 data\oretastic\loot_tables\blocks\palm_wall.json
 043e32bd044f37a4e735ea44837ea7730a1e74c3 data\oretastic\loot_tables\blocks\ruby_block.json
+4e6d369791a52d0ffe88c76374e49b8e4496ac08 data\oretastic\loot_tables\blocks\palm_wall.json
 935d82cc8daf69e9ef089eeb7cf372ca66d5e429 data\oretastic\loot_tables\blocks\palm_leaves.json
 de5f00c8b0b1499fbaaadf0e49f570e4859f56b4 data\oretastic\loot_tables\blocks\palm_fence.json
 7e0fb1061bcfe89fbbcabfff1903b3ddf2e81bdd data\oretastic\loot_tables\blocks\lignite_ore.json
