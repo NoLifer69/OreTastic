@@ -4,6 +4,7 @@
     "color": "#FC4032",
     "translate": "trim_material.oretastic.ruby"
   },
+  "incompatible_armor_material": "ruby",
   "ingredient": "oretastic:ruby",
-  "item_model_index": 0.193709
+  "item_model_index": 0.11
 }
