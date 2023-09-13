@@ -114,6 +114,6 @@ public class ModItems {
     }
 
     public static void registerModItems(){
-        OreTastic.LOGGER.info("Registering Mod Items For"+ OreTastic.MOD_ID);
+        OreTastic.LOGGER.info("Registering Mod Items For "+ OreTastic.MOD_ID);
     }
 }

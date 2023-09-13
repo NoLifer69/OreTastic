@@ -4,6 +4,7 @@
     "color": "#8DE4F7",
     "translate": "trim_material.oretastic.steel"
   },
+  "incompatible_armor_material": "steel",
   "ingredient": "oretastic:steel_ingot",
-  "item_model_index": 0.193712
+  "item_model_index": 0.14
 }

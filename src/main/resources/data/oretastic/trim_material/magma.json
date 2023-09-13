@@ -4,6 +4,7 @@
     "color": "#FA8B12",
     "translate": "trim_material.oretastic.magma"
   },
+  "incompatible_armor_material": "magma",
   "ingredient": "oretastic:magma_ingot",
-  "item_model_index": 0.193710
+  "item_model_index": 0.12
 }
