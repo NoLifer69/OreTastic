@@ -24,14 +24,24 @@
         "trims/models/armor/rib",
         "trims/models/armor/rib_leggings",
         "trims/models/armor/spire",
-        "trims/models/armor/spire_leggings"
+        "trims/models/armor/spire_leggings",
+        "trims/models/armor/wayfinder",
+        "trims/models/armor/wayfinder_leggings",
+        "trims/models/armor/shaper",
+        "trims/models/armor/shaper_leggings",
+        "trims/models/armor/silence",
+        "trims/models/armor/silence_leggings",
+        "trims/models/armor/raiser",
+        "trims/models/armor/raiser_leggings",
+        "trims/models/armor/host",
+        "trims/models/armor/host_leggings"
       ],
       "palette_key": "trims/color_palettes/trim_palette",
       "permutations": {
-        "ruby": "trims/color_palettes/ruby",
-        "steel": "trims/color_palettes/steel",
-        "magma": "trims/color_palettes/magma",
-        "titanium": "trims/color_palettes/titanium"
+        "ruby": "oretastic:trims/color_palettes/ruby",
+        "steel": "oretastic:trims/color_palettes/steel",
+        "magma": "oretastic:trims/color_palettes/magma",
+        "titanium": "oretastic:trims/color_palettes/titanium"
       }
     }
   ]
