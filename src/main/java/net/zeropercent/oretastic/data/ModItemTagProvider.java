@@ -4,8 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.util.Identifier;
-import net.zeropercent.oretastic.OreTastic;
+import net.zeropercent.oretastic.block.ModBlocks;
 import net.zeropercent.oretastic.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
@@ -18,13 +17,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.PLANKS)
-                .add(new Identifier(OreTastic.MOD_ID, "palm_planks"));
+                .add(ModBlocks.PALM_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.SAPLINGS)
-                .add(new Identifier(OreTastic.MOD_ID, "palm_sapling"));
+                .add(ModBlocks.PALM_SAPLING.asItem());
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
-                .add(new Identifier(OreTastic.MOD_ID, "palm_leaves"));
+                .add(ModBlocks.PALM_LEAVES.asItem());
 
         getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.MAGMA_INGOT)

@@ -26,19 +26,19 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerSmelting(exporter, List.of(ModItems.RAW_TITANIUM), RecipeCategory.MISC,
-                ModItems.TITANIUM, 3f,200,"titanium");
+                ModItems.TITANIUM, 3f, 200, "titanium");
         offerBlasting(exporter, List.of(ModItems.RAW_TITANIUM), RecipeCategory.MISC,
-                ModItems.TITANIUM, 3f,100,"titanium");
+                ModItems.TITANIUM, 3f,100, "titanium");
 
         offerSmelting(exporter, List.of(ModBlocks.TITANIUM_ORE), RecipeCategory.MISC,
-                ModItems.TITANIUM, 3f,200,"titanium");
+                ModItems.TITANIUM, 3f, 200, "titanium");
         offerBlasting(exporter, List.of(ModBlocks.TITANIUM_ORE), RecipeCategory.MISC,
-                ModItems.TITANIUM, 3f,100,"titanium");
+                ModItems.TITANIUM, 3f, 100, "titanium");
 
         offerSmelting(exporter, List.of(ModBlocks.DEEPSLATE_TITANIUM_ORE), RecipeCategory.MISC,
-                ModItems.TITANIUM, 3f,200,"titanium");
+                ModItems.TITANIUM, 3f, 200, "titanium");
         offerBlasting(exporter, List.of(ModBlocks.DEEPSLATE_TITANIUM_ORE), RecipeCategory.MISC,
-                ModItems.TITANIUM, 3f,100,"titanium");
+                ModItems.TITANIUM, 3f,100, "titanium");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.TITANIUM, RecipeCategory.DECORATIONS, ModBlocks.TITANIUM_BLOCK);
@@ -49,32 +49,32 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern("###")
                 .pattern("# #")
                 .input('#', ModItems.TITANIUM)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_HELMET)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANIUM_LEGGINGS)
                 .pattern("###")
                 .pattern("# #")
                 .pattern("# #")
                 .input('#', ModItems.TITANIUM)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_LEGGINGS)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANIUM_CHESTPLATE)
                 .pattern("# #")
                 .pattern("###")
                 .pattern("###")
                 .input('#', ModItems.TITANIUM)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_CHESTPLATE)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANIUM_BOOTS)
                 .pattern("# #")
                 .pattern("# #")
                 .input('#', ModItems.TITANIUM)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_BOOTS)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TITANIUM_SWORD)
                 .pattern(" # ")
@@ -82,55 +82,55 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" $ ")
                 .input('#', ModItems.TITANIUM)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_SWORD)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_AXE)
                 .pattern("## ")
                 .pattern("#$ ")
                 .pattern(" $ ")
                 .input('#', ModItems.TITANIUM)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_AXE)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_PICKAXE)
                 .pattern("###")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.TITANIUM)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_PICKAXE)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_SHOVEL)
                 .pattern(" # ")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.TITANIUM)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_SHOVEL)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_HOE)
                 .pattern("## ")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.TITANIUM)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_HOE)));
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.RUBY, RecipeCategory.DECORATIONS, ModBlocks.RUBY_BLOCK);
@@ -141,86 +141,86 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" $ ")
                 .input('#', ModItems.RUBY)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_SWORD)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_AXE)
                 .pattern("## ")
                 .pattern("#$ ")
                 .pattern(" $ ")
                 .input('#', ModItems.RUBY)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_AXE)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_PICKAXE)
                 .pattern("###")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.RUBY)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_PICKAXE)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_SHOVEL)
                 .pattern(" # ")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.RUBY)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_SHOVEL)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_HOE)
                 .pattern("## ")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.RUBY)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_HOE)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_HELMET)
                 .pattern("###")
                 .pattern("# #")
                 .input('#', ModItems.RUBY)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_HELMET)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_LEGGINGS)
                 .pattern("###")
                 .pattern("# #")
                 .pattern("# #")
                 .input('#', ModItems.RUBY)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_LEGGINGS)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_CHESTPLATE)
                 .pattern("# #")
                 .pattern("###")
                 .pattern("###")
                 .input('#', ModItems.RUBY)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_CHESTPLATE)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_BOOTS)
                 .pattern("# #")
                 .pattern("# #")
                 .input('#', ModItems.RUBY)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_BOOTS)));
+                .criterion(hasItem(ModItems.RUBY),
+                        conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.LIGNITE, RecipeCategory.DECORATIONS, ModBlocks.LIGNITE_BLOCK);
@@ -233,11 +233,11 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('@', Items.GLASS)
                 .input('!', Items.STICK)
                 .input('*', ModItems.TITANIUM)
-                .criterion(FabricRecipeProvider.hasItem(Items.GLASS),
-                        FabricRecipeProvider.conditionsFromItem(Items.GLASS))
-                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.METAL_DETECTOR)));
+                .criterion(hasItem(Items.GLASS),
+                        conditionsFromItem(Items.GLASS))
+                .criterion(hasItem(ModItems.TITANIUM),
+                        conditionsFromItem(ModItems.TITANIUM))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STEEL_SWORD)
                 .pattern(" # ")
@@ -245,86 +245,86 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" $ ")
                 .input('#', ModItems.STEEL_INGOT)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_SWORD)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_AXE)
                 .pattern("## ")
                 .pattern("#$ ")
                 .pattern(" $ ")
                 .input('#', ModItems.STEEL_INGOT)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_AXE)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_PICKAXE)
                 .pattern("###")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.STEEL_INGOT)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_PICKAXE)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_SHOVEL)
                 .pattern(" # ")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.STEEL_INGOT)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_SHOVEL)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_HOE)
                 .pattern("## ")
                 .pattern(" $ ")
                 .pattern(" $ ")
                 .input('#', ModItems.STEEL_INGOT)
                 .input('$', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
-                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_HOE)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_HELMET)
                 .pattern("###")
                 .pattern("# #")
                 .input('#', ModItems.STEEL_INGOT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_HELMET)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_LEGGINGS)
                 .pattern("###")
                 .pattern("# #")
                 .pattern("# #")
                 .input('#', ModItems.STEEL_INGOT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_LEGGINGS)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_BOOTS)
                 .pattern("# #")
                 .pattern("# #")
                 .input('#', ModItems.STEEL_INGOT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_BOOTS)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_CHESTPLATE)
                 .pattern("# #")
                 .pattern("###")
                 .pattern("###")
                 .input('#', ModItems.STEEL_INGOT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_CHESTPLATE)));
+                .criterion(hasItem(ModItems.STEEL_INGOT),
+                        conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.STEEL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.STEEL_BLOCK);
@@ -332,12 +332,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 ModItems.RAW_STEEL, RecipeCategory.DECORATIONS, ModBlocks.RAW_STEEL_BLOCK);
 
         offerSmelting(exporter, List.of(ModItems.RAW_STEEL), RecipeCategory.MISC,
-                ModItems.STEEL_INGOT, 3f,200,"steel");
+                ModItems.STEEL_INGOT, 3f, 200, "steel");
         offerBlasting(exporter, List.of(ModItems.RAW_STEEL), RecipeCategory.MISC,
-                ModItems.STEEL_INGOT, 3f,100,"steel");
+                ModItems.STEEL_INGOT, 3f, 100, "steel");
 
         offerBlasting(exporter, List.of(Items.MILK_BUCKET), RecipeCategory.MISC,
-                ModBlocks.CHEESE_BLOCK, 3f,300,"cheese");
+                ModBlocks.CHEESE_BLOCK, 3f, 300, "cheese");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.CHEESE, RecipeCategory.DECORATIONS, ModBlocks.CHEESE_BLOCK);
@@ -349,97 +349,97 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('#', Items.BREAD)
                 .input('*', Items.COOKED_BEEF)
                 .input('$', ModItems.CHEESE)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.CHEESE),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.CHEESE))
-                .criterion(FabricRecipeProvider.hasItem(Items.BREAD),
-                        FabricRecipeProvider.conditionsFromItem(Items.BREAD))
-                .criterion(FabricRecipeProvider.hasItem(Items.COOKED_BEEF),
-                        FabricRecipeProvider.conditionsFromItem(Items.COOKED_BEEF))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.SANDWICH)));
+                .criterion(hasItem(ModItems.CHEESE),
+                        conditionsFromItem(ModItems.CHEESE))
+                .criterion(hasItem(Items.BREAD),
+                        conditionsFromItem(Items.BREAD))
+                .criterion(hasItem(Items.COOKED_BEEF),
+                        conditionsFromItem(Items.COOKED_BEEF))
+                .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_PLANKS, 4)
                 .input(ModBlocks.STRIPPED_PALM_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_PALM_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_PALM_LOG))
+                .criterion(hasItem(ModBlocks.STRIPPED_PALM_LOG),
+                        conditionsFromItem(ModBlocks.STRIPPED_PALM_LOG))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModBlocks.PALM_PLANKS)));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_PLANKS, 4)
                 .input(ModBlocks.PALM_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_LOG))
-                .offerTo(exporter, new Identifier("palm_planks_from_palm_log", "pal_planks_from_palm_log"));
+                .criterion(hasItem(ModBlocks.PALM_LOG),
+                        conditionsFromItem(ModBlocks.PALM_LOG))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModBlocks.PALM_WOOD, 3)
                 .pattern("##")
                 .pattern("##")
                 .input('#', ModBlocks.PALM_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_LOG))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_WOOD)));
+                .criterion(hasItem(ModBlocks.PALM_LOG),
+                        conditionsFromItem(ModBlocks.PALM_LOG))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModBlocks.STRIPPED_PALM_WOOD, 3)
                 .pattern("##")
                 .pattern("##")
                 .input('#', ModBlocks.STRIPPED_PALM_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_PALM_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_PALM_LOG))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.STRIPPED_PALM_WOOD)));
+                .criterion(hasItem(ModBlocks.STRIPPED_PALM_LOG),
+                        conditionsFromItem(ModBlocks.STRIPPED_PALM_LOG))
+                .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_PLANKS, 4)
                 .input(ModBlocks.PALM_WOOD)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_WOOD),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_WOOD))
-                .offerTo(exporter, new Identifier("palm_planks_from_palm_wood", "palm_planks_from_palm_wood"));
+                .criterion(hasItem(ModBlocks.PALM_WOOD),
+                        conditionsFromItem(ModBlocks.PALM_WOOD))
+                .offerTo(exporter);
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_PLANKS, 4)
                 .input(ModBlocks.STRIPPED_PALM_WOOD)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_PALM_WOOD),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_PALM_WOOD))
-                .offerTo(exporter, new Identifier("palm_planks_from_stripped_palm_wood", "palm_planks_from_stripped_palm_wood"));
+                .criterion(hasItem(ModBlocks.STRIPPED_PALM_WOOD),
+                        conditionsFromItem(ModBlocks.STRIPPED_PALM_WOOD))
+                .offerTo(exporter);
 
         createDoorRecipe(ModBlocks.PALM_DOOR, Ingredient.ofItems(ModBlocks.PALM_PLANKS))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_DOOR)));
+                .criterion(hasItem(ModBlocks.PALM_PLANKS),
+                        conditionsFromItem(ModBlocks.PALM_PLANKS))
+                .offerTo(exporter);
 
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_SLAB, ModBlocks.PALM_PLANKS);
 
         createStairsRecipe(ModBlocks.PALM_STAIRS, Ingredient.ofItems(ModBlocks.PALM_PLANKS))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_STAIRS)));
+                .criterion(hasItem(ModBlocks.PALM_PLANKS),
+                        conditionsFromItem(ModBlocks.PALM_PLANKS))
+                .offerTo(exporter);
 
         offerPressurePlateRecipe(exporter, ModBlocks.PALM_PRESSURE_PLATE, ModBlocks.PALM_PLANKS);
 
-        offerWallRecipe(exporter,RecipeCategory.BUILDING_BLOCKS , ModBlocks.PALM_WALL, ModBlocks.PALM_PLANKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_WALL, ModBlocks.PALM_PLANKS);
 
         createFenceRecipe(ModBlocks.PALM_FENCE, Ingredient.ofItems(ModBlocks.PALM_PLANKS))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_FENCE)));
+                .criterion(hasItem(ModBlocks.PALM_PLANKS),
+                        conditionsFromItem(ModBlocks.PALM_PLANKS))
+                .offerTo(exporter);
 
         createFenceGateRecipe(ModBlocks.PALM_FENCE_GATE, Ingredient.ofItems(ModBlocks.PALM_PLANKS))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_FENCE_GATE)));
+                .criterion(hasItem(ModBlocks.PALM_PLANKS),
+                        conditionsFromItem(ModBlocks.PALM_PLANKS))
+                .offerTo(exporter);
 
         createTrapdoorRecipe(ModBlocks.PALM_TRAPDOOR, Ingredient.ofItems(ModBlocks.PALM_PLANKS))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_TRAPDOOR)));
+                .criterion(hasItem(ModBlocks.PALM_PLANKS),
+                        conditionsFromItem(ModBlocks.PALM_PLANKS))
+                .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_BUTTON)
                 .input(ModBlocks.PALM_PLANKS)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PALM_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PALM_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.PALM_BUTTON)));
+                .criterion(hasItem(ModBlocks.PALM_PLANKS),
+                        conditionsFromItem(ModBlocks.PALM_PLANKS))
+                .offerTo(exporter);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.MAGMA_SHARD, RecipeCategory.DECORATIONS, Blocks.MAGMA_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MAGMA_INGOT, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MAGMA_INGOT)
                 .pattern("##")
                 .pattern("##")
                 .input('#', ModItems.MAGMA_SHARD)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.MAGMA_SHARD),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.MAGMA_SHARD))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MAGMA_INGOT)));
+                .criterion(hasItem(ModItems.MAGMA_SHARD),
+                        conditionsFromItem(ModItems.MAGMA_SHARD))
+                .offerTo(exporter);
     }
 }

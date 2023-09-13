@@ -1,9 +1,7 @@
 package net.zeropercent.oretastic.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -11,11 +9,10 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.zeropercent.oretastic.OreTastic;
 import net.zeropercent.oretastic.block.ModBlocks;
-import net.zeropercent.oretastic.enchantment.ModEnchantments;
 
 public class ModItemGroup {
     public static ItemGroup ORETASTIC = Registry.register(Registries.ITEM_GROUP, new Identifier(OreTastic.MOD_ID, "oretastic"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.oretastic"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.oretastic"))
                     .icon(() -> new ItemStack(ModItems.RAW_TITANIUM)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.TITANIUM_BLOCK);
                         entries.add(ModBlocks.RAW_TITANIUM_BLOCK);
@@ -113,7 +110,6 @@ public class ModItemGroup {
                     }).build());
 
     public static void registerItemGroups() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-        });
+//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {});
     }
 }

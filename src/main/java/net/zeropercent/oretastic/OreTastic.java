@@ -1,14 +1,8 @@
 package net.zeropercent.oretastic;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.minecraft.item.trim.ArmorTrimMaterial;
-import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryBuilder;
-import net.minecraft.registry.RegistryKeys;
 import net.zeropercent.oretastic.block.ModBlocks;
-import net.zeropercent.oretastic.data.ModAdvancementProvider;
 import net.zeropercent.oretastic.enchantment.ModEnchantments;
 import net.zeropercent.oretastic.entity.ModEntities;
 import net.zeropercent.oretastic.entity.custom.StoneVillagerEntity;
@@ -23,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 public class OreTastic implements ModInitializer {
 	public static final String MOD_ID = "oretastic";
-	public static final Logger LOGGER = LoggerFactory.getLogger("oretastic");
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {

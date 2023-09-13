@@ -5,13 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.zeropercent.oretastic.block.ModBlocks;
 import net.zeropercent.oretastic.enchantment.ModEnchantments;
 import net.zeropercent.oretastic.item.ModItems;
-import net.zeropercent.oretastic.item.ModItemGroup;
-
-import java.nio.file.Path;
 
 public class ModLanguageProvider extends FabricLanguageProvider {
     public ModLanguageProvider(FabricDataOutput dataOutput) {
-        super(dataOutput, "en_us");
+        super(dataOutput);
     }
 
     @Override
@@ -25,7 +22,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STONE_VILLAGER_SPAWN_EGG, "Stone Villager Spawn Egg");
         translationBuilder.add(ModItems.METAL_DETECTOR, "Metal Detector");
 
-        translationBuilder.add("itemgroup.oretastic","OreTastic");
+        translationBuilder.add("itemGroup.oretastic","OreTastic");
 
         translationBuilder.add(ModItems.TITANIUM_HELMET, "Titanium Helmet");
         translationBuilder.add(ModItems.TITANIUM_CHESTPLATE, "Titanium Chestplate");

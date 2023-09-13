@@ -7,23 +7,23 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 
 public class LightningStrikerEnchantment extends Enchantment {
-    public LightningStrikerEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
+    public LightningStrikerEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot ... slotTypes) {
         super(weight, type, slotTypes);
     }
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(!user.getWorld().isClient()) {
-            ServerWorld world = (ServerWorld)user.getWorld();
+        if (!user.getWorld().isClient()) {
+            ServerWorld world = (ServerWorld) user.getWorld();
             BlockPos position = target.getBlockPos();
 
-            if(level == 1) {
+            if (level == 1) {
                 EntityType.LIGHTNING_BOLT.spawn(world, position, SpawnReason.TRIGGERED);
             }
 
-            if(level == 2) {
+            if (level == 2) {
                 EntityType.LIGHTNING_BOLT.spawn(world, position, SpawnReason.TRIGGERED);
-                EntityType.LIGHTNING_BOLT.spawn(world,position, SpawnReason.TRIGGERED);
+                EntityType.LIGHTNING_BOLT.spawn(world, position, SpawnReason.TRIGGERED);
             }
         }
 

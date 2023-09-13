@@ -4,7 +4,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.zeropercent.oretastic.OreTastic;
 import net.zeropercent.oretastic.entity.custom.StoneVillagerEntity;
-import org.jetbrains.annotations.MustBeInvokedByOverriders;
 import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
@@ -29,10 +28,10 @@ public class StoneVillagerModel extends GeoModel<StoneVillagerEntity> {
     }
 
     @Override
-    public void setCustomAnimations(StoneVillagerEntity animatable, long instanceId, AnimationState<StoneVillagerEntity> animationState){
+    public void setCustomAnimations(StoneVillagerEntity animatable, long instanceId, AnimationState<StoneVillagerEntity> animationState) {
         CoreGeoBone head = getAnimationProcessor().getBone("head");
 
-        if(head != null){
+        if (head != null) {
             EntityModelData entityData = animationState.getData(DataTickets.ENTITY_MODEL_DATA);
             head.setRotX(entityData.headPitch() * MathHelper.RADIANS_PER_DEGREE);
             head.setRotY(entityData.headPitch() * MathHelper.RADIANS_PER_DEGREE);

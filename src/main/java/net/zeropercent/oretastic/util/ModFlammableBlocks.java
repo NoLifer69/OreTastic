@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.zeropercent.oretastic.block.ModBlocks;
 
 public class ModFlammableBlocks {
-    public static void registerFlammableBlocks(){
+    public static void registerFlammableBlocks() {
         FlammableBlockRegistry registry = FlammableBlockRegistry.getDefaultInstance();
 
         registry.add(ModBlocks.PALM_LOG,  5, 5);

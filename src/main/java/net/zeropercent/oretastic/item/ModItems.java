@@ -33,9 +33,9 @@ public class ModItems {
     public static final Item TITANIUM_SWORD = registerItem("titanium_sword",
             new SwordItem(ModToolMaterials.TITANIUM, 3, -2.4f, new FabricItemSettings()));
     public static final Item TITANIUM_AXE = registerItem("titanium_axe",
-            new AxeItem(ModToolMaterials.TITANIUM, 5,-3.0f , new FabricItemSettings()));
+            new AxeItem(ModToolMaterials.TITANIUM, 5, -3.0f , new FabricItemSettings()));
     public static final Item TITANIUM_PICKAXE = registerItem("titanium_pickaxe",
-            new PickaxeItem(ModToolMaterials.TITANIUM, 1,-2.8f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterials.TITANIUM, 1, -2.8f, new FabricItemSettings()));
     public static final Item TITANIUM_SHOVEL = registerItem("titanium_shovel",
             new ShovelItem(ModToolMaterials.TITANIUM, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item TITANIUM_HOE = registerItem("titanium_hoe",
@@ -47,9 +47,9 @@ public class ModItems {
     public static final Item RUBY_SWORD = registerItem("ruby_sword",
             new SwordItem(ModToolMaterials.RUBY, 3, -2.4f, new FabricItemSettings()));
     public static final Item RUBY_AXE = registerItem("ruby_axe",
-            new AxeItem(ModToolMaterials.RUBY, 5,-3.0f , new FabricItemSettings()));
+            new AxeItem(ModToolMaterials.RUBY, 5, -3.0f , new FabricItemSettings()));
     public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe",
-            new PickaxeItem(ModToolMaterials.RUBY, 1,-2.8f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterials.RUBY, 1, -2.8f, new FabricItemSettings()));
     public static final Item RUBY_SHOVEL = registerItem("ruby_shovel",
             new ShovelItem(ModToolMaterials.RUBY, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item RUBY_HOE = registerItem("ruby_hoe",
@@ -88,9 +88,9 @@ public class ModItems {
     public static final Item STEEL_SWORD = registerItem("steel_sword",
             new SwordItem(ModToolMaterials.STEEL, 3, -2.4f, new FabricItemSettings()));
     public static final Item STEEL_AXE = registerItem("steel_axe",
-            new AxeItem(ModToolMaterials.STEEL, 5,-3.0f , new FabricItemSettings()));
+            new AxeItem(ModToolMaterials.STEEL, 5, -3.0f , new FabricItemSettings()));
     public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
-            new PickaxeItem(ModToolMaterials.STEEL, 1,-2.8f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterials.STEEL, 1, -2.8f, new FabricItemSettings()));
     public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
             new ShovelItem(ModToolMaterials.STEEL, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item STEEL_HOE = registerItem("steel_hoe",
@@ -109,11 +109,11 @@ public class ModItems {
     public static final Item MAGMA_INGOT = registerItem("magma_ingot",
             new Item(new FabricItemSettings()));
 
-    public static Item registerItem(String name, Item item){
-        return  Registry.register(Registries.ITEM, new Identifier(OreTastic.MOD_ID, name), item);
+    public static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(OreTastic.MOD_ID, name), item);
     }
 
-    public static void registerModItems(){
-        OreTastic.LOGGER.info("Registering Mod Items For"+ OreTastic.MOD_ID);
+    public static void registerModItems() {
+        OreTastic.LOGGER.info("Registering Mod Items For" + OreTastic.MOD_ID);
     }
 }

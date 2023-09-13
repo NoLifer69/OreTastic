@@ -16,31 +16,31 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TITANIUM_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TITANIUM_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_TITANIUM_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_TITANIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TITANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TITANIUM_BLOCK);
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUBY_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_RUBY_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUBY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGNITE_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_LIGNITE_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGNITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGNITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_LIGNITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGNITE_BLOCK);
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_STEEL_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_STEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEEL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_STEEL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_STEEL_BLOCK);
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHEESE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHEESE_BLOCK);
 
         blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
 
         BlockStateModelGenerator.BlockTexturePool palmPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         palmPool.stairs(ModBlocks.PALM_STAIRS);
@@ -54,8 +54,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHERRACK_MAGMA_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOUL_SAND_MAGMA_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHERRACK_MAGMA_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUL_SAND_MAGMA_ORE);
 
 
         blockStateModelGenerator.registerParentedItemModel(ModItems.STONE_VILLAGER_SPAWN_EGG,

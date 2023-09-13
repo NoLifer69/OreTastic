@@ -1,20 +1,18 @@
 package net.zeropercent.oretastic.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.item.*;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.zeropercent.oretastic.OreTastic;
 import net.zeropercent.oretastic.fluid.ModFluids;
-import net.zeropercent.oretastic.item.ModItems;
 import net.zeropercent.oretastic.world.tree.PalmWoodSaplingGenerator;
 
 public class ModBlocks {
@@ -83,7 +81,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).strength(.1f).requiresTool()));
 
     public static final Block PALM_SAPLING = registerBlock("palm_sapling",
-            new SaplingBlock(new PalmWoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new SaplingBlock(new PalmWoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     public static final Block PALM_STAIRS = registerBlock("palm_stairs",
             new StairsBlock(ModBlocks.PALM_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
@@ -120,20 +118,19 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.create().mapColor(MapColor.RED).strength(0.5f)
                     .sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(4, 6)));
 
-    private static Block registerBlock(String name, Block block){
+    private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK,
                 new  Identifier(OreTastic.MOD_ID, name), block);
     }
 
-    public static void registerModBlocks(){
+    public static void registerModBlocks() {
         OreTastic.LOGGER.info("Registering Mod Blocks For "+OreTastic.MOD_ID);
     }
 
-    private static Item registerBlockItem(String name, Block block){
-        Item item = Registry.register(Registries.ITEM,
+    private static Item registerBlockItem(String name, Block block) {
+        return Registry.register(Registries.ITEM,
                 new Identifier(OreTastic.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));;
-        return item;
+                new BlockItem(block, new FabricItemSettings()));
     }
 }
