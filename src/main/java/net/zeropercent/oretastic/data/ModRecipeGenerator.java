@@ -441,5 +441,139 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.MAGMA_SHARD),
                         FabricRecipeProvider.conditionsFromItem(ModItems.MAGMA_SHARD))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MAGMA_INGOT)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.NETHERITE_RING)
+                .pattern(" # ")
+                .pattern("# #")
+                .pattern(" # ")
+                .input('#', Items.NETHERITE_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.NETHERITE_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMERALD_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', Items.EMERALD)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(Items.EMERALD),
+                        FabricRecipeProvider.conditionsFromItem(Items.EMERALD))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.EMERALD_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', ModItems.RUBY)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIAMOND_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', Items.DIAMOND)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(Items.DIAMOND),
+                        FabricRecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DIAMOND_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MAGMA_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', ModItems.MAGMA_INGOT)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.MAGMA_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.MAGMA_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MAGMA_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', ModItems.TITANIUM)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', ModItems.STEEL_INGOT)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GOLD_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', Items.GOLD_INGOT)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(Items.GOLD_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.GOLD_RING)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.COPPER_RING)
+                .pattern("###")
+                .pattern("#$#")
+                .pattern("###")
+                .input('#', Items.COPPER_INGOT)
+                .input('$', ModItems.NETHERITE_RING)
+                .criterion(FabricRecipeProvider.hasItem(Items.COPPER_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.COPPER_RING)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ULTIMATE_RING)
+                .input(ModItems.COPPER_RING)
+                .input(ModItems.DIAMOND_RING)
+                .input(ModItems.EMERALD_RING)
+                .input(ModItems.GOLD_RING)
+                .input(ModItems.MAGMA_RING)
+                .input(ModItems.RUBY_RING)
+                .input(ModItems.STEEL_RING)
+                .input(ModItems.TITANIUM_RING)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.GOLD_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.GOLD_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.DIAMOND_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DIAMOND_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.COPPER_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.COPPER_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.RUBY_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.EMERALD_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.EMERALD_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.MAGMA_RING),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.MAGMA_RING))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.ULTIMATE_RING)));
     }
 }

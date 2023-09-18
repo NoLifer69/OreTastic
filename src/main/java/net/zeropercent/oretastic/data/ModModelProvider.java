@@ -118,5 +118,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MAGMA_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGMA_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.NETHERITE_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERALD_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGMA_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TITANIUM_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLD_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ULTIMATE_RING, Models.GENERATED);
     }
 }

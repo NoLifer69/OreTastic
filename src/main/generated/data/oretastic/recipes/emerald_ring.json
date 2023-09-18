@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "$": {
+      "item": "oretastic:netherite_ring"
+    }
+  },
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "result": {
+    "item": "oretastic:emerald_ring"
+  },
+  "show_notification": true
+}

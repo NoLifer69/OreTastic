@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "oretastic:steel_ingot"
+    },
+    "$": {
+      "item": "oretastic:netherite_ring"
+    }
+  },
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "result": {
+    "item": "oretastic:steel_ring"
+  },
+  "show_notification": true
+}

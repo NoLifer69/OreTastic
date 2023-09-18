@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "oretastic:titanium"
+    },
+    "$": {
+      "item": "oretastic:netherite_ring"
+    }
+  },
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "result": {
+    "item": "oretastic:titanium_ring"
+  },
+  "show_notification": true
+}

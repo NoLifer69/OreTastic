@@ -16,7 +16,7 @@ import net.zeropercent.oretastic.enchantment.ModEnchantments;
 public class ModItemGroup {
     public static ItemGroup ORETASTIC = Registry.register(Registries.ITEM_GROUP, new Identifier(OreTastic.MOD_ID, "oretastic"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.oretastic"))
-                    .icon(() -> new ItemStack(ModItems.RAW_TITANIUM)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.METAL_DETECTOR)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.TITANIUM_BLOCK);
                         entries.add(ModBlocks.RAW_TITANIUM_BLOCK);
                         entries.add(ModBlocks.TITANIUM_ORE);
@@ -78,6 +78,13 @@ public class ModItemGroup {
 
                         entries.add(ModItems.LIGNITE);
 
+                        entries.add(ModBlocks.NETHERRACK_MAGMA_ORE);
+                        entries.add(ModBlocks.SOUL_SAND_MAGMA_ORE);
+
+
+                        entries.add(ModItems.MAGMA_INGOT);
+                        entries.add(ModItems.MAGMA_SHARD);
+
                         entries.add(ModBlocks.PALM_LEAVES);
                         entries.add(ModBlocks.PALM_LOG);
                         entries.add(ModBlocks.STRIPPED_PALM_LOG);
@@ -106,10 +113,16 @@ public class ModItemGroup {
 
                         entries.add(ModItems.OIL_BUCKET);
 
-                        entries.add(ModItems.MAGMA_INGOT);
-                        entries.add(ModItems.MAGMA_SHARD);
-                        entries.add(ModBlocks.NETHERRACK_MAGMA_ORE);
-                        entries.add(ModBlocks.SOUL_SAND_MAGMA_ORE);
+                        entries.add(ModItems.NETHERITE_RING);
+                        entries.add(ModItems.EMERALD_RING);
+                        entries.add(ModItems.RUBY_RING);
+                        entries.add(ModItems.DIAMOND_RING);
+                        entries.add(ModItems.MAGMA_RING);
+                        entries.add(ModItems.TITANIUM_RING);
+                        entries.add(ModItems.STEEL_RING);
+                        entries.add(ModItems.GOLD_RING);
+                        entries.add(ModItems.COPPER_RING);
+                        entries.add(ModItems.ULTIMATE_RING);
                     }).build());
 
     public static void registerItemGroups() {

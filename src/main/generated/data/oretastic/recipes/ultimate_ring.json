@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "oretastic:copper_ring"
+    },
+    {
+      "item": "oretastic:diamond_ring"
+    },
+    {
+      "item": "oretastic:emerald_ring"
+    },
+    {
+      "item": "oretastic:gold_ring"
+    },
+    {
+      "item": "oretastic:magma_ring"
+    },
+    {
+      "item": "oretastic:ruby_ring"
+    },
+    {
+      "item": "oretastic:steel_ring"
+    },
+    {
+      "item": "oretastic:titanium_ring"
+    }
+  ],
+  "result": {
+    "item": "oretastic:ultimate_ring"
+  }
+}

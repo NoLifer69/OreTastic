@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "oretastic:magma_ingot"
+    },
+    "$": {
+      "item": "oretastic:netherite_ring"
+    }
+  },
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "result": {
+    "item": "oretastic:magma_ring"
+  },
+  "show_notification": true
+}

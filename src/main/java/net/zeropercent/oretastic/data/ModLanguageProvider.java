@@ -99,6 +99,17 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModEnchantments.LIGHTING_STRIKER, "Lighting Striker");
 
+        translationBuilder.add(ModItems.NETHERITE_RING, "Netherite Ring");
+        translationBuilder.add(ModItems.EMERALD_RING, "Emerald Ring");
+        translationBuilder.add(ModItems.RUBY_RING, "Ruby Ring");
+        translationBuilder.add(ModItems.DIAMOND_RING, "Diamond Ring");
+        translationBuilder.add(ModItems.MAGMA_RING, "Magma Ring");
+        translationBuilder.add(ModItems.TITANIUM_RING, "Titanium Ring");
+        translationBuilder.add(ModItems.STEEL_RING, "Steel Ring");
+        translationBuilder.add(ModItems.GOLD_RING, "Gold Ring");
+        translationBuilder.add(ModItems.COPPER_RING, "Copper Ring");
+        translationBuilder.add(ModItems.ULTIMATE_RING, "The Ultimate Ring");
+
         translationBuilder.add("trim_material.oretastic.magma", "Magma Material");
         translationBuilder.add("trim_material.oretastic.ruby", "Ruby Material");
         translationBuilder.add("trim_material.oretastic.titanium", "Titanium Material");

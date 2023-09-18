@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.zeropercent.oretastic.OreTastic;
 import net.zeropercent.oretastic.entity.ModEntities;
 import net.zeropercent.oretastic.fluid.ModFluids;
-import net.zeropercent.oretastic.item.custom.MetalDetectorItem;
+import net.zeropercent.oretastic.item.custom.*;
 
 public class ModItems {
     public static final Item TITANIUM = registerItem("titanium",
@@ -108,6 +108,37 @@ public class ModItems {
 
     public static final Item MAGMA_INGOT = registerItem("magma_ingot",
             new Item(new FabricItemSettings()));
+
+    public static final Item NETHERITE_RING = registerItem("netherite_ring",
+            new NetheriteRing(new FabricItemSettings().maxCount(1)));
+
+
+    public static final Item EMERALD_RING = registerItem("emerald_ring",
+            new EmeraldRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item RUBY_RING = registerItem("ruby_ring",
+            new RubyRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item DIAMOND_RING = registerItem("diamond_ring",
+            new DiamondRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item MAGMA_RING = registerItem("magma_ring",
+            new MagmaRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item TITANIUM_RING = registerItem("titanium_ring",
+            new TitaniumRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item STEEL_RING = registerItem("steel_ring",
+            new SteelRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item GOLD_RING = registerItem("gold_ring",
+            new GoldRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item COPPER_RING = registerItem("copper_ring",
+            new CopperRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item ULTIMATE_RING = registerItem("ultimate_ring",
+            new UltimateRing(new FabricItemSettings().maxCount(1)));
 
     public static Item registerItem(String name, Item item){
         return  Registry.register(Registries.ITEM, new Identifier(OreTastic.MOD_ID, name), item);

@@ -1,9 +1,9 @@
-// 1.20	2023-09-10T14:55:15.4608006	OreTastic/Block Loot Tables
+// 1.20.1	2023-09-18T15:56:51.4020542	OreTastic/Block Loot Tables
 20efaae3c7dab1153e1f43835a4adbe98c757ea8 data\oretastic\loot_tables\blocks\palm_sapling.json
 c65ea1d4b548f5b3cc5ecf6293b562144ffb55aa data\oretastic\loot_tables\blocks\stripped_palm_log.json
 7df312a3dd12eafdd2b62900f706e840a3de1441 data\oretastic\loot_tables\blocks\palm_pressure_plate.json
-ef01fbf0ff3230f2736fc1d889eca80118156a62 data\oretastic\loot_tables\blocks\soul_sand_magma_ore.json
 c12a8ffbddf1c27f68a9236f28768050b008735c data\oretastic\loot_tables\blocks\stripped_palm_wood.json
+ef01fbf0ff3230f2736fc1d889eca80118156a62 data\oretastic\loot_tables\blocks\soul_sand_magma_ore.json
 0aa9ec0d9d0a1de28613e1fa902581d11a61d0d6 data\oretastic\loot_tables\blocks\palm_stairs.json
 963b74dcc67a8998d1b84cd0ddd75f798d901b65 data\oretastic\loot_tables\blocks\netherrack_magma_ore.json
 ea3eeed84bc1448928efcdca32689c7673698fdd data\oretastic\loot_tables\blocks\titanium_block.json

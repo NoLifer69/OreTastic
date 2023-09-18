@@ -7,11 +7,12 @@
 	"authors": [
   		"Gorgi"
 	],
-	"contributors": [
-		"LagPhantom"
-	],
 	"contact": {
-		"sources": "https://github.com/NoLifer69/OreTastic"
+		"sources": "https://github.com/NoLifer69/OreTastic",
+		"github": "https://github.com/NoLifer69/OreTastic",
+		"patreon": "https://www.patreon.com/gorgidev",
+		"modrinth": "https://modrinth.com/mod/oretastic",
+		"curseforge": "https://legacy.curseforge.com/minecraft/mc-mods/an-orefull-lot-of-features-oretastic"
 	},
 	"license": "MIT",
 	"icon": "assets/oretastic/icon.png",
@@ -32,7 +33,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"geckolib": ">=4.2",
 		"fabric-api": "*"
