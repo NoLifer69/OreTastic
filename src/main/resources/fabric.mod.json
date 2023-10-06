@@ -8,11 +8,18 @@
   		"Gorgi"
 	],
 	"contact": {
-		"sources": "https://github.com/NoLifer69/OreTastic",
-		"github": "https://github.com/NoLifer69/OreTastic",
-		"patreon": "https://www.patreon.com/gorgidev",
-		"modrinth": "https://modrinth.com/mod/oretastic",
-		"curseforge": "https://legacy.curseforge.com/minecraft/mc-mods/an-orefull-lot-of-features-oretastic"
+	},
+	"custom": {
+		"fabric-renderer-api-v1:contains_renderer": true,
+		"modmenu": {
+			"links": {
+				"Discord": "https://discord.gg/kmUYWXjZ8a",
+				"Github": "https://github.com/NoLifer69/OreTastic",
+				"Patreon": "https://www.patreon.com/gorgidev",
+				"Modrinth Page": "https://modrinth.com/mod/oretastic",
+				"Curseforge Page": "https://legacy.curseforge.com/minecraft/mc-mods/an-orefull-lot-of-features-oretastic"
+			}
+		}
 	},
 	"license": "MIT",
 	"icon": "assets/oretastic/icon.png",

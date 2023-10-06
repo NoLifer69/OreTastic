@@ -22,7 +22,8 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:grass_block"
+      "item": "oretastic:metal_detector",
+      "nbt": "{Damage:0}"
     },
     "show_toast": false,
     "title": {

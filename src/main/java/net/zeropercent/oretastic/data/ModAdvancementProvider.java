@@ -24,7 +24,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
     public void generateAdvancement(Consumer<Advancement> consumer) {
         Advancement rootAdvancement = Advancement.Builder.create()
                 .display(
-                        Items.GRASS_BLOCK, // The display icon
+                        ModItems.METAL_DETECTOR, // The display icon
                         Text.literal("Touch Grass"), // The title
                         Text.literal("Finally!"), // The description
                         new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
