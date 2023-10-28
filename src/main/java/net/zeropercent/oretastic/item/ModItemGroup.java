@@ -103,7 +103,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PALM_PRESSURE_PLATE);
                         entries.add(ModBlocks.PALM_BUTTON);
 
-                        entries.add(ModItems.STONE_VILLAGER_SPAWN_EGG);
                         entries.add(ModItems.METAL_DETECTOR);
 
                         entries.add(ModBlocks.CHEESE_BLOCK);
@@ -123,6 +122,11 @@ public class ModItemGroup {
                         entries.add(ModItems.GOLD_RING);
                         entries.add(ModItems.COPPER_RING);
                         entries.add(ModItems.ULTIMATE_RING);
+
+                        entries.add(ModItems.FROST_ELEMENTAL_SPAWN_EGG);
+                        entries.add(ModItems.STONE_VILLAGER_SPAWN_EGG);
+                        //entries.add(ModItems.ICE_GOBLIN_SPAWN_EGG);
+                        entries.add(ModItems.PORCUPINE_SPAWN_EGG);
                     }).build());
 
     public static void registerItemGroups() {

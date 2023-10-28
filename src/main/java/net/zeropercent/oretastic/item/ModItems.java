@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
 import net.zeropercent.oretastic.OreTastic;
 import net.zeropercent.oretastic.entity.ModEntities;
@@ -16,10 +17,6 @@ public class ModItems {
 
     public static final Item RAW_TITANIUM = registerItem("raw_titanium",
             new Item(new FabricItemSettings()));
-
-    public static final Item STONE_VILLAGER_SPAWN_EGG = registerItem("stone_villager_spawn_egg",
-            new SpawnEggItem(ModEntities.STONE_VILLAGER, 999999, 535353,
-                    new FabricItemSettings()));
 
     public static final Item TITANIUM_BOOTS = registerItem("titanium_boots",
             new ArmorItem(ModArmorMaterials.TITANIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
@@ -139,6 +136,18 @@ public class ModItems {
 
     public static final Item ULTIMATE_RING = registerItem("ultimate_ring",
             new UltimateRing(new FabricItemSettings().maxCount(1)));
+
+    public static final Item FROST_ELEMENTAL_SPAWN_EGG = registerItem("frost_elemental_spawn_egg",
+            new SpawnEggItem(ModEntities.FROST_ELEMENTAL, 1001033, 9433559, new FabricItemSettings()));
+
+    public static final Item STONE_VILLAGER_SPAWN_EGG = registerItem("stone_vilager_spawn_egg",
+            new SpawnEggItem(ModEntities.STONE_VILLAGER, 999999, 535353, new FabricItemSettings()));
+
+    //public static final Item ICE_GOBLIN_SPAWN_EGG = registerItem("ice_goblin_spawn_egg",
+            //new SpawnEggItem(ModEntities.ICE_GOBLIN, 92176255, 255255255, new FabricItemSettings()));
+
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
+            new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
 
     public static Item registerItem(String name, Item item){
         return  Registry.register(Registries.ITEM, new Identifier(OreTastic.MOD_ID, name), item);

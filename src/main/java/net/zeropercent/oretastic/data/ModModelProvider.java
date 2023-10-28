@@ -2,12 +2,12 @@ package net.zeropercent.oretastic.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.ModelIds;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 import net.zeropercent.oretastic.block.ModBlocks;
 import net.zeropercent.oretastic.item.ModItems;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -56,10 +56,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHERRACK_MAGMA_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOUL_SAND_MAGMA_ORE);
-
-
-        blockStateModelGenerator.registerParentedItemModel(ModItems.STONE_VILLAGER_SPAWN_EGG,
-                ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
     }
 
     @Override
@@ -95,7 +91,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.RAW_STEEL,  Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_STEEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STEEL_SWORD, Models.HANDHELD);
@@ -129,5 +125,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLD_RING, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_RING, Models.GENERATED);
         itemModelGenerator.register(ModItems.ULTIMATE_RING, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FROST_ELEMENTAL_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.STONE_VILLAGER_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        /*itemModelGenerator.register(ModItems.ICE_GOBLIN_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));*/
+        itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }

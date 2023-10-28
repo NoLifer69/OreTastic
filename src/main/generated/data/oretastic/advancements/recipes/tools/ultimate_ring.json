@@ -118,6 +118,7 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_netherite_ring",
       "has_gold_ring",
       "has_diamond_ring",
@@ -126,8 +127,7 @@
       "has_steel_ring",
       "has_emerald_ring",
       "has_titanium_ring",
-      "has_magma_ring",
-      "has_the_recipe"
+      "has_magma_ring"
     ]
   ],
   "rewards": {

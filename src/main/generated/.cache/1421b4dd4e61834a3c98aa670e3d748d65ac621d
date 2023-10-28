@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-21T17:21:04.5774572	OreTastic/Model Definitions
+// 1.20.2	2023-10-28T15:54:54.2310723	OreTastic/Model Definitions
 981d976e191196ea3fc9a87c9bf73fef61aebf9e assets\oretastic\models\block\deepslate_steel_ore.json
 bee96f5fa27e15b028c8499bdd991a29791489fd assets\oretastic\models\block\deepslate_titanium_ore.json
 ad5225df92cb74e9caf29cc5363ccd4a6ea61f1e assets\oretastic\models\item\titanium_boots.json
@@ -34,10 +34,11 @@ cf4efad0fb654643825d99f8989bb098b6e7b407 assets\oretastic\models\block\palm_fenc
 5f875dd6a7fd38c9a93daf957373f40d2107154a assets\oretastic\models\item\palm_leaves.json
 52035adf8358dcb5c84da301abfc8c7921b9db89 assets\oretastic\models\block\palm_slab_top.json
 926504dece9a5f54a02262f4abfeb4a9295555ef assets\oretastic\models\block\palm_log_horizontal.json
-b30d4a8b1e326443c515187af6a3d14f6dfe776e assets\oretastic\models\block\palm_stairs.json
 a6fc051dc89d2ac305424c5b532aaad339b4f173 assets\oretastic\models\item\ruby_ring.json
+b30d4a8b1e326443c515187af6a3d14f6dfe776e assets\oretastic\models\block\palm_stairs.json
 6b79b68a38176d76be386788c0a4f6cef2cb1244 assets\oretastic\models\block\palm_door_bottom_right_open.json
 4a5c23528b7c18c3d8ab5eded780938fad10f532 assets\oretastic\models\item\ruby_sword.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\oretastic\models\item\porcupine_spawn_egg.json
 e8a6cdbc84d35f5109b6db3ab781803ddb25e26d assets\oretastic\models\item\palm_log.json
 85c4b333d68d57fa135d5d0ad1c76685eed6f314 assets\oretastic\models\item\steel_boots.json
 3cba0274503f5aa857f2e37c3a0a22944a233171 assets\oretastic\models\block\palm_wood.json
@@ -61,10 +62,10 @@ a3564640587c0ed4f6a60f5f4de921e41ed47f4c assets\oretastic\models\item\titanium_r
 add4f569f90a68b283d8b0343f9d6b35f5751c10 assets\oretastic\models\block\soul_sand_magma_ore.json
 23bde42bda1e11a112538bbd3a84cda6a88d7f48 assets\oretastic\models\block\palm_button_pressed.json
 792023547e5e60ec92ceb15025684953f4e34c44 assets\oretastic\models\block\steel_block.json
-70f7f63c7d85d85c1d1eaf9554c8f61e465886e5 assets\oretastic\blockstates\deepslate_lignite_ore.json
 18a1b3ed252bc216b19d8d493b789d2580513f64 assets\oretastic\blockstates\palm_trapdoor.json
-2a4be71d0d61b76a4e847d691c9d053969d4ce83 assets\oretastic\models\block\palm_door_bottom_right.json
+70f7f63c7d85d85c1d1eaf9554c8f61e465886e5 assets\oretastic\blockstates\deepslate_lignite_ore.json
 69d21354d960b11b8ced082b546269742cded2de assets\oretastic\models\item\ruby_helmet.json
+2a4be71d0d61b76a4e847d691c9d053969d4ce83 assets\oretastic\models\block\palm_door_bottom_right.json
 425c4717db718da223dacb270f9f4eebe1b92594 assets\oretastic\models\item\raw_steel.json
 644f4186ba605ad2b07a522eb4abfdc4ee8b6b7d assets\oretastic\models\item\emerald_ring.json
 6bb5db4925bf8eff056a27f170ddeeb68f23fdce assets\oretastic\models\item\magma_ingot.json
@@ -74,6 +75,7 @@ ded1dd4eccbdadca5f4caea87a4fa149112ec981 assets\oretastic\models\block\palm_log.
 6a4fc774056ac938db6a3d320079b4582b60f35b assets\oretastic\models\item\soul_sand_magma_ore.json
 a6ef8e648d414834a86f96732a2df93270ed8764 assets\oretastic\models\block\titanium_block.json
 e4801045da6b4412d94d3a17b2e752bcc408a64a assets\oretastic\blockstates\palm_leaves.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\oretastic\models\item\frost_elemental_spawn_egg.json
 8345a1f5f5da4349f9f6d676abe4405d544dc414 assets\oretastic\models\item\oil_bucket.json
 17dc49e02bae19790974f9217c316d06b3f9db7b assets\oretastic\models\item\ruby_leggings.json
 eace1de1a093fd30cb39e63353e21b17d36e4029 assets\oretastic\models\block\palm_trapdoor_open.json
@@ -88,6 +90,7 @@ acf36a497af1eef796619e425993f9bcab8964a8 assets\oretastic\models\item\deepslate_
 f90912cdac7c38101e63d850367e951524deb5af assets\oretastic\models\block\palm_button.json
 423bcb4c6db0b6962779f4225d658f73359219a2 assets\oretastic\models\item\palm_planks.json
 9ea9064b5acf66742e6cf2d6e6a836205d00e5f6 assets\oretastic\models\item\ruby.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\oretastic\models\item\stone_vilager_spawn_egg.json
 a3897e8bdb98134ce554d353888dc89696db9172 assets\oretastic\models\item\palm_wood.json
 6c34ecd3cf6714eb09bd3828a9243414750bdbe8 assets\oretastic\models\block\ruby_ore.json
 ccf49ca57ad6e6824e8a46b547810b22da408e6c assets\oretastic\blockstates\palm_door.json
@@ -168,7 +171,6 @@ d6b401bd42e9e60868c8614eab96060203977aa9 assets\oretastic\blockstates\palm_wood.
 b0ad24b45054120a3bc96408489b1d07a78b98ca assets\oretastic\models\item\raw_steel_block.json
 8f67b29b21aa8ee4571e98fa1e20c179e0e170d7 assets\oretastic\models\block\palm_fence_post.json
 fff2036d9867a81d2cebf7686d5b3fc3dc6a90c5 assets\oretastic\models\item\stripped_palm_wood.json
-63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\oretastic\models\item\stone_villager_spawn_egg.json
 18e5e983ee9f813f5b665b47545c274a88bd423f assets\oretastic\models\item\steel_hoe.json
 2b13fab9bb42d5ce0e07d426b0abbab2ae8f73c1 assets\oretastic\models\item\sandwich.json
 252b74a8772b8b3fa095968da4eb7d6600886869 assets\oretastic\models\block\netherrack_magma_ore.json

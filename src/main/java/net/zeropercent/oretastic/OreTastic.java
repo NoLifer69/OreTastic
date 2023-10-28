@@ -3,17 +3,16 @@ package net.zeropercent.oretastic;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.minecraft.item.trim.ArmorTrimMaterial;
-import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryBuilder;
-import net.minecraft.registry.RegistryKeys;
 import net.zeropercent.oretastic.block.ModBlocks;
-import net.zeropercent.oretastic.data.ModAdvancementProvider;
 import net.zeropercent.oretastic.enchantment.ModEnchantments;
 import net.zeropercent.oretastic.entity.ModEntities;
+import net.zeropercent.oretastic.entity.custom.FrostElementalEntity;
+import net.zeropercent.oretastic.entity.custom.IceGoblinEntity;
+import net.zeropercent.oretastic.entity.custom.PorcupineEntity;
 import net.zeropercent.oretastic.entity.custom.StoneVillagerEntity;
 import net.zeropercent.oretastic.item.ModItemGroup;
 import net.zeropercent.oretastic.item.ModItems;
+import net.zeropercent.oretastic.sound.ModSounds;
 import net.zeropercent.oretastic.util.ModFlammableBlocks;
 import net.zeropercent.oretastic.util.ModRegistries;
 import net.zeropercent.oretastic.util.ModStrippableBlocks;
@@ -35,7 +34,11 @@ public class OreTastic implements ModInitializer {
 		ModFlammableBlocks.registerFlammableBlocks();
 		ModStrippableBlocks.registerStrippables();
 		ModEnchantments.registerModEnchantments();
+		ModSounds.registerSounds();
 
-		FabricDefaultAttributeRegistry.register(ModEntities.STONE_VILLAGER, StoneVillagerEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.FROST_ELEMENTAL, FrostElementalEntity.createFrostElementalAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.STONE_VILLAGER, StoneVillagerEntity.createStoneVillagerAttributes());
+		//FabricDefaultAttributeRegistry.register(ModEntities.ICE_GOBLIN, IceGoblinEntity.createIceGoblinAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
 	}
 }

@@ -22,7 +22,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RAW_STEEL, "Raw Steel");
         translationBuilder.add(ModItems.RUBY, "Ruby");
         translationBuilder.add(ModItems.LIGNITE, "Lignite");
-        translationBuilder.add(ModItems.STONE_VILLAGER_SPAWN_EGG, "Stone Villager Spawn Egg");
         translationBuilder.add(ModItems.METAL_DETECTOR, "Metal Detector");
 
         translationBuilder.add("itemgroup.oretastic","OreTastic");
@@ -109,6 +108,22 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.GOLD_RING, "Gold Ring");
         translationBuilder.add(ModItems.COPPER_RING, "Copper Ring");
         translationBuilder.add(ModItems.ULTIMATE_RING, "The Ultimate Ring");
+
+        translationBuilder.add(ModItems.FROST_ELEMENTAL_SPAWN_EGG, "Frost Elemental Spawn Egg");
+        translationBuilder.add(ModItems.STONE_VILLAGER_SPAWN_EGG, "Stone Villager Spawn Egg");
+        //translationBuilder.add(ModItems.ICE_GOBLIN_SPAWN_EGG, "Ice Goblin Spawn Egg");
+        translationBuilder.add(ModItems.PORCUPINE_SPAWN_EGG, "Porcupine Spawn Egg");
+
+
+        translationBuilder.add("sounds.oretastic.stone_villager_hurt", "Stone Villager Hurt");
+        translationBuilder.add("sounds.oretastic.stone_villager_death", "Stone Villager Death");
+        translationBuilder.add("sounds.oretastic.metal_detector_found_ore", "Metal Detector Found Ore");
+
+
+        translationBuilder.add("entity.oretastic.frost_elemental", "Frost Elemental");
+        translationBuilder.add("entity.oretastic.stone_villager", "Stone Villager");
+        ///translationBuilder.add("entity.oretastic.ice_goblin", "Ice Goblin");
+        translationBuilder.add("entity.oretastic.porcupine", "Porcupine");
 
         translationBuilder.add("trim_material.oretastic.magma", "Magma Material");
         translationBuilder.add("trim_material.oretastic.ruby", "Ruby Material");

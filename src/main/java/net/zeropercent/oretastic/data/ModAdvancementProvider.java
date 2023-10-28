@@ -3,9 +3,11 @@ package net.zeropercent.oretastic.data;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
+import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.Criterion;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
+import net.minecraft.datafixer.fix.AdvancementsFix;
 import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -21,8 +23,8 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
     }
 
     @Override
-    public void generateAdvancement(Consumer<Advancement> consumer) {
-        Advancement rootAdvancement = Advancement.Builder.create()
+    public void generateAdvancement(Consumer<AdvancementEntry> consumer) {
+        AdvancementEntry rootAdvancement = Advancement.Builder.create()
                 .display(
                         ModItems.METAL_DETECTOR, // The display icon
                         Text.literal("Touch Grass"), // The title
@@ -37,7 +39,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .criterion("gotGrass", InventoryChangedCriterion.Conditions.items(Items.GRASS_BLOCK))
                 .build(consumer, OreTastic.MOD_ID + "/root");
 
-        Advancement gotTitaniumAdvancement = Advancement.Builder.create()
+        AdvancementEntry gotTitaniumAdvancement = Advancement.Builder.create()
                 .display(
                         ModItems.TITANIUM, // The display icon
                         Text.literal("Titanium Ore"), // The title
@@ -53,7 +55,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .parent(rootAdvancement)
                 .build(consumer, OreTastic.MOD_ID + "/got_titanium");
 
-        Advancement usedMetalDetector = Advancement.Builder.create()
+        AdvancementEntry usedMetalDetector = Advancement.Builder.create()
                 .display(
                         ModItems.METAL_DETECTOR, // The display icon
                         Text.literal("Miners Are Gonna Love This"), // The title
@@ -69,7 +71,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .parent(rootAdvancement)
                 .build(consumer, OreTastic.MOD_ID + "/got_metal_detector");
 
-        Advancement gotRubyAdvancement = Advancement.Builder.create()
+        AdvancementEntry gotRubyAdvancement = Advancement.Builder.create()
                 .display(
                         ModItems.RUBY, // The display icon
                         Text.literal("Most op Ore"), // The title
@@ -85,7 +87,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .parent(rootAdvancement)
                 .build(consumer, OreTastic.MOD_ID + "/got_ruby");
 
-        Advancement getFullRubyArmor = Advancement.Builder.create()
+        AdvancementEntry getFullRubyArmor = Advancement.Builder.create()
                 .display(
                         ModItems.RUBY_CHESTPLATE, // The display icon
                         Text.literal("Cover Me In Rubies"), // The title
@@ -104,7 +106,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .parent(gotRubyAdvancement)
                 .build(consumer, OreTastic.MOD_ID + "/got_full_ruby_armor");
 
-        Advancement getMagmaShard = Advancement.Builder.create()
+        AdvancementEntry getMagmaShard = Advancement.Builder.create()
                 .display(
                         ModItems.MAGMA_SHARD, // The display icon
                         Text.literal("It Must Hurt To Touch"), // The title

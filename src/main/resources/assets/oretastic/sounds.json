@@ -1,0 +1,22 @@
+{
+  "metal_detector_found_ore": {
+    "subtitle": "sounds.oretastic.metal_detector_found_ore",
+    "sounds": [
+      "oretastic:metal_detector_found_ore"
+    ]
+  },
+
+  "stone_villager_death": {
+    "subtitle": "sounds.oretastic.stone_villager_death",
+    "sounds": [
+      "oretastic:stone_villager_death"
+    ]
+  },
+
+  "stone_villager_hurt": {
+    "subtitle": "sounds.oretastic.stone_villager_hurt",
+    "sounds": [
+      "oretastic:stone_villager_hurt"
+    ]
+  }
+}
