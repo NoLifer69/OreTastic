@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:oretastic/got_forge_key",
+  "criteria": {
+    "got_ring": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:ruby_ring"
+            ]
+          },
+          {
+            "items": [
+              "oretastic:copper_ring"
+            ]
+          },
+          {
+            "items": [
+              "oretastic:diamond_ring"
+            ]
+          },
+          {
+            "items": [
+              "oretastic:emerald_ring"
+            ]
+          },
+          {
+            "items": [
+              "oretastic:gold_ring"
+            ]
+          },
+          {
+            "items": [
+              "oretastic:steel_ring"
+            ]
+          },
+          {
+            "items": [
+              "oretastic:titanium_ring"
+            ]
+          },
+          {
+            "items": [
+              "oretastic:magma_ring"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Acquire A Ring"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:ruby_ring"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Professional Forger"
+    }
+  },
+  "requirements": [
+    [
+      "got_ring"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -13,7 +13,7 @@ import net.zeropercent.oretastic.block.ModBlocks;
 import net.zeropercent.oretastic.item.ModItems;
 
 import java.util.List;
-import java.util.function.Consumer;
+
 
 public class ModRecipeGenerator extends FabricRecipeProvider {
     public ModRecipeGenerator(FabricDataOutput output) {
@@ -449,11 +449,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.NETHERITE_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMERALD_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
-                .input('#', Items.EMERALD)
+                .input('#', Blocks.EMERALD_BLOCK)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(Items.EMERALD),
                         FabricRecipeProvider.conditionsFromItem(Items.EMERALD))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -461,11 +462,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.EMERALD_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
-                .input('#', ModItems.RUBY)
+                .input('#', ModBlocks.RUBY_BLOCK)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY),
                         FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -473,11 +475,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUBY_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIAMOND_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
-                .input('#', Items.DIAMOND)
+                .input('#', Blocks.DIAMOND_BLOCK)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(Items.DIAMOND),
                         FabricRecipeProvider.conditionsFromItem(Items.DIAMOND))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -485,11 +488,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DIAMOND_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MAGMA_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
                 .input('#', ModItems.MAGMA_INGOT)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.MAGMA_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.MAGMA_INGOT))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -497,11 +501,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MAGMA_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
-                .input('#', ModItems.TITANIUM)
+                .input('#', ModBlocks.TITANIUM_BLOCK)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.TITANIUM),
                         FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -509,11 +514,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.TITANIUM_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
-                .input('#', ModItems.STEEL_INGOT)
+                .input('#', ModBlocks.STEEL_BLOCK)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -521,11 +527,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.STEEL_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GOLD_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
-                .input('#', Items.GOLD_INGOT)
+                .input('#', Blocks.GOLD_BLOCK)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(Items.GOLD_INGOT),
                         FabricRecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -533,11 +540,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.GOLD_RING)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.COPPER_RING)
-                .pattern("###")
+                .pattern("#!#")
                 .pattern("#$#")
                 .pattern("###")
-                .input('#', Items.COPPER_INGOT)
+                .input('#', Blocks.COPPER_BLOCK)
                 .input('$', ModItems.NETHERITE_RING)
+                .input('!', ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(Items.COPPER_INGOT),
                         FabricRecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
@@ -553,6 +561,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input(ModItems.RUBY_RING)
                 .input(ModItems.STEEL_RING)
                 .input(ModItems.TITANIUM_RING)
+                .input(ModItems.FORGE_KEY)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.NETHERITE_RING),
                         FabricRecipeProvider.conditionsFromItem(ModItems.NETHERITE_RING))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.GOLD_RING),
@@ -571,6 +580,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.TITANIUM_RING))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.MAGMA_RING),
                         FabricRecipeProvider.conditionsFromItem(ModItems.MAGMA_RING))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.FORGE_KEY),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.FORGE_KEY))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.ULTIMATE_RING)));
     }
 }

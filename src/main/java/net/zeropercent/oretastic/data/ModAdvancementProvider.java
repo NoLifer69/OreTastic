@@ -121,5 +121,76 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 .criterion("got_magma_shard", InventoryChangedCriterion.Conditions.items(ModItems.MAGMA_SHARD))
                 .parent(rootAdvancement)
                 .build(consumer, OreTastic.MOD_ID + "/got_magma_shard");
+
+        AdvancementEntry getNetheriteRing = Advancement.Builder.create()
+                .display(
+                        ModItems.NETHERITE_RING, // The display icon
+                        Text.literal("I Wonder What This Does?"), // The title
+                        Text.literal("Acquire A Netherite Ring"), // The description
+                        new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
+                        AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_netherite_key", InventoryChangedCriterion.Conditions.items(ModItems.NETHERITE_RING))
+                .parent(rootAdvancement)
+                .build(consumer, OreTastic.MOD_ID + "/got_netherite_key");
+
+        AdvancementEntry getForgeKey = Advancement.Builder.create()
+                .display(
+                        ModItems.FORGE_KEY, // The display icon
+                        Text.literal("Forger Starter"), // The title
+                        Text.literal("Acquire A Forge Key"), // The description
+                        new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
+                        AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_forge_key", InventoryChangedCriterion.Conditions.items(ModItems.FORGE_KEY))
+                .parent(getNetheriteRing)
+                .build(consumer, OreTastic.MOD_ID + "/got_forge_key");
+
+        AdvancementEntry gotRing = Advancement.Builder.create()
+                .display(
+                        ModItems.RUBY_RING, // The display icon
+                        Text.literal("Professional Forger"), // The title
+                        Text.literal("Acquire A Ring"), // The description
+                        new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        false // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_ring", InventoryChangedCriterion.Conditions.items(ModItems.RUBY_RING,
+                        ModItems.COPPER_RING,
+                        ModItems.DIAMOND_RING,
+                        ModItems.EMERALD_RING,
+                        ModItems.GOLD_RING,
+                        ModItems.STEEL_RING,
+                        ModItems.TITANIUM_RING,
+                        ModItems.MAGMA_RING))
+                .parent(getForgeKey)
+                .build(consumer, OreTastic.MOD_ID + "/got_ring");
+
+        AdvancementEntry gotUltimateRing = Advancement.Builder.create()
+                .display(
+                        ModItems.ULTIMATE_RING, // The display icon
+                        Text.literal("Ultimate Forger"), // The title
+                        Text.literal("Acquire The Ultimate Ring"), // The description
+                        new Identifier("oretastic","textures/block/palm_log.png"), // Background image used
+                        AdvancementFrame.CHALLENGE, // Options: TASK, CHALLENGE, GOAL
+                        true, // Show toast top right
+                        true, // Announce to chat
+                        true // Hidden in the advancement tab
+                )
+                // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                .criterion("got_ultimate_ring", InventoryChangedCriterion.Conditions.items(ModItems.ULTIMATE_RING))
+                .parent(getForgeKey)
+                .build(consumer, OreTastic.MOD_ID + "/got_ultimate_ring");
     }
 }

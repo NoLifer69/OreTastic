@@ -4,8 +4,10 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.zeropercent.oretastic.OreTastic;
 import net.zeropercent.oretastic.entity.ModEntities;
 import net.zeropercent.oretastic.fluid.ModFluids;
@@ -137,6 +139,9 @@ public class ModItems {
     public static final Item ULTIMATE_RING = registerItem("ultimate_ring",
             new UltimateRing(new FabricItemSettings().maxCount(1)));
 
+    public static final Item NETHER_BOOK = registerItem("nether_book",
+            new WrittenBookItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC)));
+
     public static final Item FROST_ELEMENTAL_SPAWN_EGG = registerItem("frost_elemental_spawn_egg",
             new SpawnEggItem(ModEntities.FROST_ELEMENTAL, 1001033, 9433559, new FabricItemSettings()));
 
@@ -148,6 +153,8 @@ public class ModItems {
 
     public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
             new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
+    public static final Item FORGE_KEY = registerItem("forge_key",
+            new Item(new FabricItemSettings().maxCount(1)));
 
     public static Item registerItem(String name, Item item){
         return  Registry.register(Registries.ITEM, new Identifier(OreTastic.MOD_ID, name), item);

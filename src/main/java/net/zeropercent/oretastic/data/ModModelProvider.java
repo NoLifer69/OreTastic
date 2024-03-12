@@ -134,5 +134,9 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));*/
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+
+        itemModelGenerator.register(ModItems.NETHER_BOOK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FORGE_KEY, Models.GENERATED);
     }
 }

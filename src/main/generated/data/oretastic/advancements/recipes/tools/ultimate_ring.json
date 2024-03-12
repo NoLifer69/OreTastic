@@ -37,6 +37,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_forge_key": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:forge_key"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_gold_ring": {
       "conditions": {
         "items": [
@@ -127,7 +139,8 @@
       "has_steel_ring",
       "has_emerald_ring",
       "has_titanium_ring",
-      "has_magma_ring"
+      "has_magma_ring",
+      "has_forge_key"
     ]
   ],
   "rewards": {

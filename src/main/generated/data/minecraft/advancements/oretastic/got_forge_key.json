@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:oretastic/got_netherite_key",
+  "criteria": {
+    "got_forge_key": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:forge_key"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Acquire A Forge Key"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:forge_key"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Forger Starter"
+    }
+  },
+  "requirements": [
+    [
+      "got_forge_key"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

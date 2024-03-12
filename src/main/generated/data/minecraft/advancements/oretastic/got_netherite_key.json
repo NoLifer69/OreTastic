@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:oretastic/root",
+  "criteria": {
+    "got_netherite_key": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:netherite_ring"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Acquire A Netherite Ring"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oretastic:netherite_ring"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "I Wonder What This Does?"
+    }
+  },
+  "requirements": [
+    [
+      "got_netherite_key"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

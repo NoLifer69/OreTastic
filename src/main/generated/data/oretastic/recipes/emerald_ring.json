@@ -2,15 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "!": {
+      "item": "oretastic:forge_key"
+    },
     "#": {
-      "item": "minecraft:emerald"
+      "item": "minecraft:emerald_block"
     },
     "$": {
       "item": "oretastic:netherite_ring"
     }
   },
   "pattern": [
-    "###",
+    "#!#",
     "#$#",
     "###"
   ],

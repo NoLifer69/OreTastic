@@ -127,6 +127,10 @@ public class ModItemGroup {
                         entries.add(ModItems.STONE_VILLAGER_SPAWN_EGG);
                         //entries.add(ModItems.ICE_GOBLIN_SPAWN_EGG);
                         entries.add(ModItems.PORCUPINE_SPAWN_EGG);
+
+                        entries.add(ModItems.NETHER_BOOK);
+
+                        entries.add(ModItems.FORGE_KEY);
                     }).build());
 
     public static void registerItemGroups() {

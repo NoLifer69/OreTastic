@@ -14,6 +14,7 @@ import net.zeropercent.oretastic.item.ModItemGroup;
 import net.zeropercent.oretastic.item.ModItems;
 import net.zeropercent.oretastic.sound.ModSounds;
 import net.zeropercent.oretastic.util.ModFlammableBlocks;
+import net.zeropercent.oretastic.util.ModLootTableModifiers;
 import net.zeropercent.oretastic.util.ModRegistries;
 import net.zeropercent.oretastic.util.ModStrippableBlocks;
 import net.zeropercent.oretastic.world.gen.ModWorldGeneration;
@@ -35,6 +36,7 @@ public class OreTastic implements ModInitializer {
 		ModStrippableBlocks.registerStrippables();
 		ModEnchantments.registerModEnchantments();
 		ModSounds.registerSounds();
+		ModLootTableModifiers.modifyLootTables();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.FROST_ELEMENTAL, FrostElementalEntity.createFrostElementalAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.STONE_VILLAGER, StoneVillagerEntity.createStoneVillagerAttributes());

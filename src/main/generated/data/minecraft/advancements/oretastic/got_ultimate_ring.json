@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:oretastic/got_forge_key",
+  "criteria": {
+    "got_ultimate_ring": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oretastic:ultimate_ring"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oretastic:textures/block/palm_log.png",
+    "description": {
+      "text": "Acquire The Ultimate Ring"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "oretastic:ultimate_ring"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Ultimate Forger"
+    }
+  },
+  "requirements": [
+    [
+      "got_ultimate_ring"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

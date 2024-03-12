@@ -26,15 +26,15 @@ public class SteelRing extends Item {
         if(user instanceof PlayerEntity){
             PlayerEntity PlayerEntity = (PlayerEntity) (Object) user;
             PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 3600));
-            user.getItemCooldownManager().set(ModItems.EMERALD_RING, 1200);
-            user.getItemCooldownManager().set(ModItems.DIAMOND_RING, 1200);
-            user.getItemCooldownManager().set(ModItems.RUBY_RING, 1200);
-            user.getItemCooldownManager().set(ModItems.MAGMA_RING, 1200);
-            user.getItemCooldownManager().set(ModItems.TITANIUM_RING, 1200);
-            user.getItemCooldownManager().set(ModItems.STEEL_RING, 4000);
-            user.getItemCooldownManager().set(ModItems.GOLD_RING, 1200);
-            user.getItemCooldownManager().set(ModItems.COPPER_RING, 1200);
-            user.getItemCooldownManager().set(ModItems.ULTIMATE_RING, 1200);
+            user.getItemCooldownManager().set(ModItems.EMERALD_RING, 5000);
+            user.getItemCooldownManager().set(ModItems.DIAMOND_RING, 5000);
+            user.getItemCooldownManager().set(ModItems.RUBY_RING, 5000);
+            user.getItemCooldownManager().set(ModItems.MAGMA_RING, 5000);
+            user.getItemCooldownManager().set(ModItems.TITANIUM_RING, 5000);
+            user.getItemCooldownManager().set(ModItems.STEEL_RING, 7000);
+            user.getItemCooldownManager().set(ModItems.GOLD_RING, 5000);
+            user.getItemCooldownManager().set(ModItems.COPPER_RING, 5000);
+            user.getItemCooldownManager().set(ModItems.ULTIMATE_RING, 5000);
         }
 
         return super.use(world, user, hand);

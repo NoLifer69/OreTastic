@@ -30,18 +30,18 @@ public class UltimateRing extends Item {
             PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 12000, 2));
             PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 12000, 1));
             PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 12000, 2));
-            PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 12000, 2));
-            PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 12000, 2));
+            PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 12000, 1));
+            PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 12000, 1));
             PlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 12000, 1));
-            user.getItemCooldownManager().set(ModItems.EMERALD_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.DIAMOND_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.RUBY_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.MAGMA_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.TITANIUM_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.STEEL_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.GOLD_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.COPPER_RING, 15000);
-            user.getItemCooldownManager().set(ModItems.ULTIMATE_RING, 15000);
+            user.getItemCooldownManager().set(ModItems.EMERALD_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.DIAMOND_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.RUBY_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.MAGMA_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.TITANIUM_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.STEEL_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.GOLD_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.COPPER_RING, 30000);
+            user.getItemCooldownManager().set(ModItems.ULTIMATE_RING, 50000);
         }
 
         return super.use(world, user, hand);
@@ -50,7 +50,7 @@ public class UltimateRing extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-            tooltip.add(Text.literal("Fully Regenerates Your Health").formatted(Formatting.GOLD));
+            tooltip.add(Text.literal("Gives All Effects From Rings").formatted(Formatting.GOLD));
 
         super.appendTooltip(stack, world, tooltip, context);
     }

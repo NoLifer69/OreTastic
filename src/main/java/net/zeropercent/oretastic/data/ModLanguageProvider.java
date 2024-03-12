@@ -114,6 +114,10 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         //translationBuilder.add(ModItems.ICE_GOBLIN_SPAWN_EGG, "Ice Goblin Spawn Egg");
         translationBuilder.add(ModItems.PORCUPINE_SPAWN_EGG, "Porcupine Spawn Egg");
 
+        translationBuilder.add(ModItems.NETHER_BOOK, "Fallen Dimension Guide");
+
+        translationBuilder.add(ModItems.FORGE_KEY, "Forge Key");
+
 
         translationBuilder.add("sounds.oretastic.stone_villager_hurt", "Stone Villager Hurt");
         translationBuilder.add("sounds.oretastic.stone_villager_death", "Stone Villager Death");
